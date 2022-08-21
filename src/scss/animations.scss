@@ -1,0 +1,117 @@
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -35%) rotate(-45deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  75% {
+    transform: translate(-50%, -35%) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes show-feedback {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close-feedback {
+  0% {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes show-thank {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+// animation: infinity-slider 5s linear infinite;
+@keyframes infinity-slider {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+// animation: bounce 0.6s;
+@keyframes bounce {
+
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0);}
+
+}
+
+// animation: bounce-failure 0.6s;
+@keyframes bounce-failure {
+  0% {
+    transform: translate(-50%, -1000%);
+  }
+  70% {
+    transform: translate(-50%, -45%);
+  }
+  90% {
+    transform: translate(-50%, -55%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+// animation: bounce-success 0.6s;
+@keyframes bounce-success {
+  0% {
+    transform: translate(-50%, -1000%);
+  }
+  70% {
+    transform: translate(-50%, -45%);
+  }
+  90% {
+    transform: translate(-50%, -55%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+// animation: shake 0.6s;
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}

@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: $red;
+  border-radius: 5px;
+
+  font-size: rem(14);
+  line-height: math.div(20, 14);
+  color: #ffffff;
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+
+  &:hover {
+    border: 1px solid $red;
+    background-color: #fff;
+    color: $red;
+  }
+
+  &:hover .card__button-icon,
+  &:hover .card-catalog__button-icon {
+    transition: all 0.3s linear;
+  }
+}
+
+.card-catalog {
+  .button {
+    background-color: #fff;
+    border: 1px solid $red;
+    color: $red;
+
+    &:hover {
+      background-color: $red;
+      color: white;
+    }
+    
+  }
+}
