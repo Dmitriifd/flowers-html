@@ -1,0 +1,27 @@
+.bouquets {
+    padding-bottom: 60px;
+		// .bouquets__container
+		&__container {}
+		// .bouquets__slider
+		&__slider {}
+		// .bouquets__wrapper
+		&__wrapper {}
+		// .bouquets__slide
+		&__slide {}
+		// .bouquets__slider-button
+		&__slider-button {}
+		// .bouquets__slider-prev
+		&__slider-prev {}
+		// .bouquets__slider-next
+		&__slider-next {}
+}
+
+
+
+
+
+.bouquets__slider.swiper {
+    @media (max-width: 1120px) {
+        overflow: visible;
+    }
+}
