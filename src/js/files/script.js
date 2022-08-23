@@ -14,17 +14,15 @@ const popupBtnClose = document.querySelector('.header-popup__button');
 
 try {
   popupBtnClose.addEventListener('click', () => {
-    wrapper.classList.toggle('hide');
-    popup.classList.toggle('hide');
+    popup.classList.add('hide');
     if (popup.classList.contains('hide')) {
       const height = getComputedStyle(popup).height;
-      console.log(height);
       wrapper.style.cssText = `
-    transform: translate3d(0, -${height}, 0);
-    `;
+        transform: translate3d(0, -${height}, 0);
+        `;
       popup.style.cssText = `
-transform: translate3d(0, -${height}, 0);
-    `;
+        transform: translate3d(0, -${height}, 0);
+        `;
     }
   });
 } catch (error) {

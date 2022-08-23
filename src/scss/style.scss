@@ -146,7 +146,6 @@ body {
 // Подключение стилей отдельных страниц
 @import 'home';
 
-.wrapper.hide {
+.wrapper {
     transition: transform 0.5s ease-in-out;
-//   transform: translate3d(0, -52px, 0);
 }
