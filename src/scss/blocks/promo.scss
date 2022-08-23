@@ -9,7 +9,7 @@
   }
   // .promo__wrapper
   &__wrapper {
-    position: relative;
+    
   }
   // .promo__slide
   &__slide {
@@ -51,7 +51,9 @@
   &__slide-button {
     display: none;
     @media (min-width: 375px) {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 32px;
       height: 32px;
       box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
@@ -89,6 +91,7 @@
     border-radius: 10px;
     overflow: hidden;
     max-width: 203px;
+    position: relative;
   }
   // .promocode__name
   &__name {
@@ -136,4 +139,23 @@
     width: 40px;
     height: 3px;
     opacity: 0.5;
+}
+.promocode__notion {
+    position: relative;
+        top: 35px;
+    display: inline-block;
+    right: -84px;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #fff;
+    z-index: 2122;
+    background-color: $green;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+
+.promocode__notion.active {
+    top: 24px;
+    opacity: 1;
 }

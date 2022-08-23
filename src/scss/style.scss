@@ -14,7 +14,7 @@
 //@import "fonts/icons";
 
 // Шрифт по умолчанию
-$fontFamily: 'Arial', sans-serif;
+$fontFamily: 'TTNorms', Arial;
 $fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
@@ -53,7 +53,6 @@ $responsiveType: 1;
 @import 'base/null';
 
 body {
-  
   line-height: math.div(22, 16);
   // Скролл заблокирован
   .lock & {
@@ -147,12 +146,7 @@ body {
 // Подключение стилей отдельных страниц
 @import 'home';
 
-.page__container {
-    display: flex;
-    gap: 30px;
-    height: 100%;
+.wrapper.hide {
+    transition: transform 0.5s ease-in-out;
+//   transform: translate3d(0, -52px, 0);
 }
-
-
-
-
