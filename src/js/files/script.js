@@ -12,6 +12,31 @@ const wrapper = document.querySelector('.wrapper');
 const popup = document.querySelector('.header-popup');
 const popupBtnClose = document.querySelector('.header-popup__button');
 
+/* NavBar */
+const navbarlink = document.querySelectorAll('.navbar-mobile__link');
+const navbarList = document.querySelector('.navbar-mobile__list');
+
+const setActiveLink = (anchor) => {
+  navbarlink.forEach((navItem) => {
+    navItem.classList.toggle('active', anchor === navItem.getAttribute('href'));
+  });
+};
+
+const navBarClickHandler = (e) => {
+  const link = e.target.closest('a');
+
+  if (!link) {
+    return;
+  }
+
+  const anchor = link.getAttribute('href');
+  setActiveLink(anchor);
+};
+
+navbarList.addEventListener('click', navBarClickHandler);
+
+/* NavBar */
+
 try {
   popupBtnClose.addEventListener('click', () => {
     popup.classList.add('hide');
