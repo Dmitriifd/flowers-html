@@ -4,7 +4,6 @@
   transform: translate3d(0, 0, 0);
   transition: transform 0.5s ease-in-out;
 
-
   &__container {
     display: flex;
     display: flex;
@@ -52,7 +51,7 @@
     display: flex;
     align-items: center;
     min-height: 40px;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
   }
@@ -82,7 +81,7 @@
   // .header__top-container
   &__top-container {
     padding: 0 15px;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     column-gap: 21px;

@@ -4,17 +4,18 @@
 @import 'base/mixins';
 
 // Подключение шрифтов
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One:regular);
 //&display=swap - добавить при подключении через плагин
 
 // Подключить если есть локальные файлы шрифтов
-//@import "fonts/fonts";
+@import "fonts/fonts";
 
 // Подключение иконочных шрифтов
 // Подключить если есть файл иконочного шрифта
 //@import "fonts/icons";
 
 // Шрифт по умолчанию
-$fontFamily: 'TTNorms', Arial;
+$fontFamily: 'TTNorms';
 $fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
@@ -53,6 +54,7 @@ $responsiveType: 1;
 @import 'base/null';
 
 body {
+  
   line-height: math.div(22, 16);
   // Скролл заблокирован
   .lock & {
@@ -148,4 +150,5 @@ body {
 
 .wrapper {
     transition: transform 0.5s ease-in-out;
+
 }
