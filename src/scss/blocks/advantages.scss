@@ -31,6 +31,21 @@
     }
 
   }
+	&__item:nth-child(1) {
+			@media (min-width: $mobile) {
+					flex-grow: 1;
+			}
+	}
+	&__item:nth-child(2) {
+	@media (min-width: $mobile) {
+					flex-grow: 1;
+			}
+	}
+	&__item:nth-child(3) {
+			@media (min-width: $mobile) {
+					flex-grow: 1;
+			}
+	}
   &__item img {
     width: 32px;
     height: 32px;
