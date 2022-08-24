@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220824230449">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="header-popup">
+		<div class="header-popup__container">
+			<p>Сумма минимального заказа 1000 ₽</p>
+			<button class="header-popup__button">
+				<svg class="icon" height="20" width="20">
+					<use xlink:href="img/icons/icons.svg#svg-close"></use>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+
+
+			<div class="header__info">
+				<div class="header__info-container">
+					<p class="header__info-desc">Доставка цветов<br> в Воронеже</p>
+					<ul class="header__info-social">
+						<li class="header__info-item">
+							<a class="header__info-link" href="/">
+								<svg class="icon" height="20" width="20">
+									<use xlink:href="img/icons/icons.svg#svg-vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__info-item">
+							<a class="header__info-link" href="/">
+								<svg class="icon" height="20" width="20">
+									<use xlink:href="img/icons/icons.svg#svg-inst"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__info-item">
+							<a class="header__info-link" href="/">
+								<svg class="icon" height="20" width="20">
+									<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__top">
+				<div class="header__top-container">
+					<a class="header__top-logo" href="#">
+						<picture>
+							<source media="(min-width: 768px)" srcset="img/logo-tablet.png" />
+							<img class="" src="img/logo-mobile.png" alt="logo" />
+						</picture>
+					</a>
+					<div class="header__top-search">
+						<form class="header__top-form" id="filters-form">
+
+							<input class="header__top-input" type="text" placeholder="Поиск...">
+							<button class="header__top-button">
+								<svg class="icon" height="20" width="20">
+									<use xlink:href="img/icons/icons.svg#svg-search"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="" class="menu__link" data-goto=".box">Пункт 1</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link" data-goto=".box2">Пункт 2</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link" data-goto=".box3">Пункт 3</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link" data-goto=".box4">Пункт 4</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Пункт</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link">Пункт</a>
+						</li>
+					</ul>
+				</nav>
+				<button type="button" class="menu__icon icon-menu">
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="promo">
+				<div class="promo__container">
+					<!-- Оболочка слайдера -->
+					<div class="promo__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="promo__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="promo__slide swiper-slide" style="background-image: url('../img/main-slider.png')">
+								<h2 class="promo__slide-title">Бесплатная доставка от 5000 руб</h2>
+								<div class="promo__slide-promocode promocode">
+									<p class="promocode__notion">скопировано!</p>
+									<p class="promocode__desc">Промокод:</p>
+									<div class="promocode__wrapper">
+										<span class="promocode__name">ЛАВКАРОЗ</span>
+
+										<button class="promocode__button">
+											<svg class="icon" height="20" width="20">
+												<use xlink:href="img/icons/icons.svg#svg-copy"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="promo__slide swiper-slide" style="background-image: url('../img/main-slider.png')">
+								<div class="promo__slide-img"></div>
+								<h2 class="promo__slide-title">Бесплатная доставка от 5000 руб</h2>
+								<div class="promo__slide-promocode promocode">
+									<p class="promocode__desc">Промокод:</p>
+									<div class="promocode__wrapper">
+										<span class="promocode__name">ЛАВКАРОЗ</span>
+										<button class="promocode__button">
+											<svg class="icon" height="20" width="20">
+												<use xlink:href="img/icons/icons.svg#svg-copy"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="promo-pagination swiper-pagination"></div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<button type="button" class="promo__slide-button promo__slide-prev">
+							<svg class="icon" height="20" width="20">
+								<use xlink:href="img/icons/icons.svg#svg-arrow-left"></use>
+							</svg>
+						</button>
+						<button type="button" class="promo__slide-button promo__slide-next">
+							<svg class="icon" height="20" width="20">
+								<use xlink:href="img/icons/icons.svg#svg-arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+
+					<ul class="promo__items advantages">
+						<li class="advantages__item">
+							<img src="img/icons/advantages/1.svg" alt="icon" />
+							<p class="advantages__text">
+								Экспресс-доставка<br />
+								от 90 минут
+							</p>
+						</li>
+						<li class="advantages__item">
+							<img src="img/icons/advantages/2.svg" alt="icon" />
+							<p class="advantages__text">Низкие цены</p>
+						</li>
+						<li class="advantages__item">
+							<img src="img/icons/advantages/3.svg" alt="icon" />
+							<p class="advantages__text">
+								Каждый день поступление<br />
+								свежих цветов
+							</p>
+						</li>
+						<li class="advantages__item">
+							<img src="img/icons/advantages/4.svg" alt="icon" />
+							<p class="advantages__text">Опытные флористы</p>
+						</li>
+						<li class="advantages__item">
+							<img src="img/icons/advantages/5.svg" alt="icon" />
+							<p class="advantages__text">
+								Работаем<br />
+								без выходных
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="bouquets">
+				<div class="bouquets__container">
+					<!-- Оболочка слайдера -->
+					<div class="bouquets__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<ul class="bouquets__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<li class="bouquets__slide swiper-slide">
+								<article class="card">
+									<div class="card__header">
+										<div class="card__labels">
+											<span class="card__label card__label--discount">-35%</span>
+											<span class="card__label card__label--hit visually-hidden">Хит</span>
+											<span class="card__label card__label--new visually-hidden">New</span>
+										</div>
+										<div class="card__controls">
+											<buton class="card__favorite-button favorite-button">
+												<span class="visually-hidden">Добавить в избранное.</span>
+											</buton>
+										</div>
+										<div class="card__slider swiper">
+											<div class="card__wrapper swiper-wrapper">
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/1.webp" type="image/webp"><img src="../img/flowers/1.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/2.webp" type="image/webp"><img src="../img/flowers/2.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/3.webp" type="image/webp"><img src="../img/flowers/3.jpg" alt="" /></picture>
+												</div>
+											</div>
+											<div class="card__slider-pagination swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="card__body">
+										<h2 class="card__title">
+											<a href="/">Букет 5 пионовидных роз Мисти баблс</a>
+										</h2>
+										<p class="card__text">Высота: 60 см, Ширина: 35 см</p>
+										<div class="card__body-control">
+											<p class="card__price">13 499 ₽<s>15 499 ₽</s></p>
+											<button class="card__button button">
+												<svg class="card__button-icon" height="24" width="24">
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												В корзину
+											</button>
+										</div>
+									</div>
+								</article>
+							</li>
+							<li class="bouquets__slide swiper-slide">
+								<article class="card">
+									<div class="card__header">
+										<div class="card__labels">
+											<span class="card__label card__label--discount">-35%</span>
+											<span class="card__label card__label--hit visually-hidden">Хит</span>
+											<span class="card__label card__label--new visually-hidden">New</span>
+										</div>
+										<div class="card__controls">
+											<buton class="card__favorite-button favorite-button">
+												<span class="visually-hidden">Добавить в избранное.</span>
+											</buton>
+										</div>
+										<div class="card__slider swiper">
+											<div class="card__wrapper swiper-wrapper">
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/1.webp" type="image/webp"><img src="../img/flowers/1.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/2.webp" type="image/webp"><img src="../img/flowers/2.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/3.webp" type="image/webp"><img src="../img/flowers/3.jpg" alt="" /></picture>
+												</div>
+											</div>
+											<div class="card__slider-pagination swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="card__body">
+										<h2 class="card__title">
+											<a href="/">Букет 5 пионовидных роз Мисти баблс</a>
+										</h2>
+										<p class="card__text">Высота: 60 см, Ширина: 35 см</p>
+										<div class="card__body-control">
+											<p class="card__price">13 499 ₽<s>15 499 ₽</s></p>
+											<button class="card__button button">
+												<svg class="card__button-icon" height="24" width="24">
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												В корзину
+											</button>
+										</div>
+									</div>
+								</article>
+							</li>
+							<li class="bouquets__slide swiper-slide">
+								<article class="card">
+									<div class="card__header">
+										<div class="card__labels">
+											<span class="card__label card__label--discount">-35%</span>
+											<span class="card__label card__label--hit visually-hidden">Хит</span>
+											<span class="card__label card__label--new visually-hidden">New</span>
+										</div>
+										<div class="card__controls">
+											<buton class="card__favorite-button favorite-button">
+												<span class="visually-hidden">Добавить в избранное.</span>
+											</buton>
+										</div>
+										<div class="card__slider swiper">
+											<div class="card__wrapper swiper-wrapper">
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/1.webp" type="image/webp"><img src="../img/flowers/1.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/2.webp" type="image/webp"><img src="../img/flowers/2.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/3.webp" type="image/webp"><img src="../img/flowers/3.jpg" alt="" /></picture>
+												</div>
+											</div>
+											<div class="card__slider-pagination swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="card__body">
+										<h2 class="card__title">
+											<a href="/">Букет 5 пионовидных роз Мисти баблс</a>
+										</h2>
+										<p class="card__text">Высота: 60 см, Ширина: 35 см</p>
+										<div class="card__body-control">
+											<p class="card__price">13 499 ₽<s>15 499 ₽</s></p>
+											<button class="card__button button">
+												<svg class="card__button-icon" height="24" width="24">
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												В корзину
+											</button>
+										</div>
+									</div>
+								</article>
+							</li>
+							<li class="bouquets__slide swiper-slide">
+								<article class="card">
+									<div class="card__header">
+										<div class="card__labels">
+											<span class="card__label card__label--discount">-35%</span>
+											<span class="card__label card__label--hit visually-hidden">Хит</span>
+											<span class="card__label card__label--new visually-hidden">New</span>
+										</div>
+										<div class="card__controls">
+											<buton class="card__favorite-button favorite-button">
+												<span class="visually-hidden">Добавить в избранное.</span>
+											</buton>
+										</div>
+										<div class="card__slider swiper">
+											<div class="card__wrapper swiper-wrapper">
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/1.webp" type="image/webp"><img src="../img/flowers/1.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/2.webp" type="image/webp"><img src="../img/flowers/2.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/3.webp" type="image/webp"><img src="../img/flowers/3.jpg" alt="" /></picture>
+												</div>
+											</div>
+											<div class="card__slider-pagination swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="card__body">
+										<h2 class="card__title">
+											<a href="/">Букет 5 пионовидных роз Мисти баблс</a>
+										</h2>
+										<p class="card__text">Высота: 60 см, Ширина: 35 см</p>
+										<div class="card__body-control">
+											<p class="card__price">13 499 ₽<s>15 499 ₽</s></p>
+											<button class="card__button button">
+												<svg class="card__button-icon" height="24" width="24">
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												В корзину
+											</button>
+										</div>
+									</div>
+								</article>
+							</li>
+							<li class="bouquets__slide swiper-slide">
+								<article class="card">
+									<div class="card__header">
+										<div class="card__labels">
+											<span class="card__label card__label--discount">-35%</span>
+											<span class="card__label card__label--hit visually-hidden">Хит</span>
+											<span class="card__label card__label--new visually-hidden">New</span>
+										</div>
+										<div class="card__controls">
+											<buton class="card__favorite-button favorite-button">
+												<span class="visually-hidden">Добавить в избранное.</span>
+											</buton>
+										</div>
+										<div class="card__slider swiper">
+											<div class="card__wrapper swiper-wrapper">
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/1.webp" type="image/webp"><img src="../img/flowers/1.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/2.webp" type="image/webp"><img src="../img/flowers/2.jpg" alt="" /></picture>
+												</div>
+												<div class="card__slide swiper-slide">
+													<picture><source srcset="../img/flowers/3.webp" type="image/webp"><img src="../img/flowers/3.jpg" alt="" /></picture>
+												</div>
+											</div>
+											<div class="card__slider-pagination swiper-pagination"></div>
+										</div>
+									</div>
+									<div class="card__body">
+										<h2 class="card__title">
+											<a href="/">Букет 5 пионовидных роз Мисти баблс</a>
+										</h2>
+										<p class="card__text">Высота: 60 см, Ширина: 35 см</p>
+										<div class="card__body-control">
+											<p class="card__price">13 499 ₽<s>15 499 ₽</s></p>
+											<button class="card__button button">
+												<svg class="card__button-icon" height="24" width="24">
+													<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+												</svg>
+												В корзину
+											</button>
+										</div>
+									</div>
+								</article>
+							</li>
+						</ul>
+
+						<button type="button" class="bouquets__slider-button bouquets__slider-prev"></button>
+						<button type="button" class="bouquets__slider-button bouquets__slider-next"></button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div class="navbar-mobile">
+		<ul class="navbar-mobile__list">
+			<li class="navbar-mobile__item">
+				<a class="navbar-mobile__link active" href="#navbar-home">
+					<svg class="navbar-mobile__icon" height="24" width="24">
+						<use xlink:href="img/icons/icons.svg#svg-home-navbar"></use>
+					</svg>
+					<span class="navbar-mobile__title">Главная</span>
+				</a>
+			</li>
+			<li class="navbar-mobile__item">
+				<a class="navbar-mobile__link" href="#navbar-catalog">
+					<svg class="navbar-mobile__icon" height="24" width="24">
+						<use xlink:href="img/icons/icons.svg#svg-search-navbar"></use>
+					</svg>
+					<span class="navbar-mobile__title">Каталог</span>
+				</a>
+			</li>
+			<li class="navbar-mobile__item">
+				<a class="navbar-mobile__link" href="#navbar-basket">
+					<svg class="navbar-mobile__icon" height="24" width="24">
+						<use xlink:href="img/icons/icons.svg#svg-basket-navbar"></use>
+					</svg>
+					<span class="navbar-mobile__title">Корзина</span>
+				</a>
+			</li>
+			<li class="navbar-mobile__item">
+				<a class="navbar-mobile__link" href="#navbar-fovorite">
+					<svg class="navbar-mobile__icon" height="24" width="24">
+						<use xlink:href="img/icons/icons.svg#svg-favorite-navbar"></use>
+					</svg>
+					<span class="navbar-mobile__title">Избраное</span>
+				</a>
+			</li>
+			<li class="navbar-mobile__item">
+				<a class="navbar-mobile__link" href="#navbar-user">
+					<svg class="navbar-mobile__icon" height="24" width="24">
+						<use xlink:href="img/icons/icons.svg#svg-user-navbar"></use>
+					</svg>
+					<span class="navbar-mobile__title">Мои заказы</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div> -->
+
+	<script src="js/app.min.js?_v=20220824230449"></script>
+</body>
+
+</html>
