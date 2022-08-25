@@ -3596,7 +3596,8 @@
                     slidesPerView: 3.7
                 },
                 1120: {
-                    slidesPerView: 4
+                    slidesPerView: 4,
+                    spaceBetween: 25
                 }
             },
             on: {}
