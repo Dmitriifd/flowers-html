@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220825170948">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220825192622">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,11 +25,29 @@
 	</div>
 	<div class="wrapper">
 		<header class="header">
-
-
 			<div class="header__info">
 				<div class="header__info-container">
-					<p class="header__info-desc">Доставка цветов<br> в Воронеже</p>
+					<p class="header__info-time">Пн-Сб: 8:00–20:00 Вс: 9:00–20:00</p>
+					<nav class="header__info-nav info-nav">
+						<ul class="info-nav__list">
+							<li class="info-nav__item">
+								<a class="info-nav__link" href="#">Доставка</a>
+							</li>
+							<li class="info-nav__item">
+								<a class="info-nav__link" href="#">Оплата</a>
+							</li>
+							<li class="info-nav__item">
+								<a class="info-nav__link" href="#">
+									Информация
+									<img src="img/icons/arrow-menu.svg" alt="" />
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<p class="header__info-desc">
+						Доставка цветов<br />
+						в Воронеже
+					</p>
 					<ul class="header__info-social">
 						<li class="header__info-item">
 							<a class="header__info-link" href="/">
@@ -48,9 +66,19 @@
 						<li class="header__info-item">
 							<a class="header__info-link" href="/">
 								<svg class="icon" height="20" width="20">
+									<use xlink:href="img/icons/icons.svg#svg-user-navbar"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="header__info-item">
+							<a class="header__info-link" href="/">
+								<svg class="icon" height="20" width="20">
 									<use xlink:href="img/icons/icons.svg#svg-phone"></use>
 								</svg>
 							</a>
+						</li>
+						<li class="header__info-item order">
+							<a class="header__info-link" href="#"> Мои заказы </a>
 						</li>
 					</ul>
 				</div>
@@ -63,16 +91,41 @@
 							<img class="" src="img/logo-mobile.png" alt="logo" />
 						</picture>
 					</a>
+					<a class="header__top-phone" href="#">
+						<svg class="icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-call"></use>
+						</svg>
+					</a>
 					<div class="header__top-search">
 						<form class="header__top-form" id="filters-form">
-
-							<input class="header__top-input" type="text" placeholder="Поиск...">
+							<input class="header__top-input" type="text" placeholder="Поиск..." />
 							<button class="header__top-button">
 								<svg class="icon" height="20" width="20">
 									<use xlink:href="img/icons/icons.svg#svg-search"></use>
 								</svg>
 							</button>
 						</form>
+					</div>
+					<div class="header__top-actions">
+						<ul class="header__top-list">
+							<li class="header__top-item">
+								<a class="header__top-link" href="#">
+									<svg height="24" width="24">
+										<use xlink:href="img/icons/icons.svg#svg-favorite-navbar"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header__top-item">
+								<a class="header__top-link" href="#">
+									<svg height="24" width="24">
+										<use xlink:href="img/icons/icons.svg#svg-basket-navbar"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<a class="header__top-cart" href="#">
+							16 500 ₽
+						</a>
 					</div>
 				</div>
 			</div>
@@ -509,7 +562,7 @@
 	</div>
 </div> -->
 
-	<script src="js/app.min.js?_v=20220825170948"></script>
+	<script src="js/app.min.js?_v=20220825192622"></script>
 </body>
 
 </html>
