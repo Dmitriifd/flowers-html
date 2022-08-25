@@ -1,0 +1,29 @@
+.info-nav {
+	display: none;
+
+	@media (min-width: $mobileSmall) {
+		display: block;
+	}
+
+	// .info-nav__list
+	&__list {
+		display: flex;
+		column-gap: 10px;
+
+		@media (max-width: $mobile) {
+			padding-left: 40px;
+		}
+	}
+	// .info-nav__item
+	&__item {
+	}
+	// .info-nav__link
+	&__link {
+		display: flex;
+		align-items: center;
+		column-gap: 5px;
+		font-size: 14px;
+		line-height: 20px;
+		color: #505567;
+	}
+}

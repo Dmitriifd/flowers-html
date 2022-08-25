@@ -137,6 +137,7 @@ body {
 // Подключение стилей отдельных блоков
 @import 'header';
 // Карточка товара
+@import 'blocks/info-nav';
 @import 'blocks/card';
 @import 'blocks/card-catalog';
 @import 'blocks/button';
