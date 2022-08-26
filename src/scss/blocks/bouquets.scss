@@ -35,16 +35,24 @@
 	}
 	
 	&__slider-prev {
+		display: none;
 		position: absolute;
 		top: 50%;
 		left: -5px;
 		z-index: 1;
+		@media (min-width: $pc) {
+				display: block;
+		}
 	}
 	&__slider-next {
+		display: none;
 		position: absolute;
 		top: 50%;
 		right: -5px;
 		z-index: 1;
+		@media (min-width: $pc) {
+				display: block;
+		}
 	}
 	// .bouquets__slider-button
 	&__slider-button {

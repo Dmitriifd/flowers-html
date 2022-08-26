@@ -50,6 +50,17 @@
 			display: none;
 		}
 	}
+	&__top-desc {
+		display: none;
+		font-size: 14px;
+		line-height: 20px;
+		margin-right: 10px;
+
+		@media (min-width: 1100px) {
+			display: block;
+			order: 2;
+		}
+	}
 	&__info-container {
 		padding: 0 15px;
 		display: flex;
@@ -58,6 +69,10 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		justify-content: space-between;
+
+		@media (min-width: $mobile) {
+			min-height: 50px;
+		}
 	}
 	&__top-phone {
 		display: none;
@@ -72,7 +87,18 @@
 			display: flex;
 			margin-left: 10px;
 		}
+
+		@media (min-width: 1100px) {
+			order: 4;
+		}
 	}
+	&__top-phones {
+		@media (min-width: 1100px) {
+			order: 4;
+			margin-right: 10px;
+		}
+	}
+
 	&__info-social {
 		display: flex;
 		align-items: center;
@@ -112,7 +138,11 @@
 		column-gap: 14px;
 
 		@media (min-width: 576px) {
-				display: flex;
+			display: flex;
+		}
+
+		@media (min-width: 1100px) {
+			order: 6;
 		}
 	}
 	&__top-list {
@@ -129,9 +159,19 @@
 		height: 44px;
 		border: 1px solid #e2e4eb;
 		border-radius: 40px;
+
 		@media (min-width: 576px) {
-				display: flex;
+			display: flex;
 		}
+
+		& svg {
+			transition: all .2s linear;
+		}
+		&:hover svg {
+			transition: all .2s linear;
+			color: $green;
+		}
+
 	}
 
 	&__top-cart {
@@ -140,7 +180,7 @@
 		font-weight: 500;
 
 		@media (min-width: $mobile) {
-				display: flex;
+			display: flex;
 		}
 	}
 
@@ -177,13 +217,20 @@
 			transition: all 0.3s ease-in-out;
 			color: $green;
 		}
+		&:hover {
+			transition: all 0.3s ease-in-out;
+			color: $green;
+		}
 	}
 
 	// .header__top
 	&__top {
 		padding: 13px 0;
 		box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
-		margin-bottom: 20px;
+
+		@media (min-width: $mobile) {
+			padding: 18px 0;
+		}
 	}
 	// .header__top-container
 	&__top-container {
@@ -195,10 +242,17 @@
 	}
 	// .header__top-logo
 	&__top-logo {
+		@media (min-width: 1100px) {
+			order: 1;
+		}
 	}
 	// .header__top-search
 	&__top-search {
 		flex-grow: 1;
+
+		@media (min-width: 1100px) {
+			order: 3;
+		}
 	}
 	// .header__top-form
 	&__top-form {
@@ -221,13 +275,14 @@
 
 	// .header__menu
 	&__menu {
+		@media (max-width: $tablet) {
+			overflow: auto;
+		}
 	}
 }
 
 .menu__body {
-	margin-top: 20px;
-	margin-bottom: 50px;
-	@media (max-width: 800px) {
+	@media (max-width: $mobile) {
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -257,29 +312,115 @@
 .menu__list {
 	display: flex;
 
-	@media (max-width: 800px) {
+	@media (max-width: 767px) {
 		flex-direction: column;
 		gap: 30px;
 	}
+	@media (min-width: $mobile) {
+		gap: 38px;
+	}
+	@media (min-width: $tablet) {
+		flex-wrap: wrap;
+		row-gap: 10px;
+	}
 }
 
-.menu__item {
-	margin-right: 15px;
+.menu__link {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	font-weight: 500;
+	img {
+		margin-left: 5px;
+	}
+	&-img {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	&.discount {
+		color: $red;
+	}
 }
 
 .header__menu {
-	display: flex;
+	&-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	// display: none;
 	align-items: center;
-	@media (min-width: 768px) {
+	@media (min-width: $mobile) {
+		background-color: #ffffff;
+		box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		padding-top: 19px;
+	}
+}
+
+.menu {
+	&__item {
+		position: relative;
+		padding-bottom: 19px;
+	}
+	&__sub-list {
 		display: none;
+
+		@media (min-width: $tablet) {
+			display: block;
+			background-color: #ffffff;
+			border: 1px solid #f2f6f7;
+			box-shadow: 0px 10px 30px rgba(34, 42, 70, 0.1);
+			border-radius: 10px;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+			transform: translate(0, 10px);
+			visibility: hidden;
+			min-width: 200px;
+			padding: 20px;
+			position: absolute;
+			top: 29px;
+			left: 0;
+			pointer-events: none;
+			z-index: 5;
+		}
+	}
+
+	&__item:hover &__sub-list {
+		transform: translate(0px, 0px);
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+	&__item .menu__link img {
+		transition: transform 0.2s linear;
+	}
+	&__item:hover .menu__link img {
+		transition: transform 0.2s linear;
+		transform: rotate(-180deg);
+	}
+	&__sub-item {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__sub-link {
+		transition: color 0.3s linear;
+		&:hover {
+			color: $green;
+		}
 	}
 }
 
 //Burger
 
 .icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
+	// display: none;
+	@media (max-width: 767px) {
 		padding: 5px;
 		display: block;
 		margin-left: auto;

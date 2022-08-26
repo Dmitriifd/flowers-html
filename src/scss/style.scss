@@ -138,6 +138,7 @@ body {
 @import 'header';
 // Карточка товара
 @import 'blocks/info-nav';
+@import 'blocks/phones-header';
 @import 'blocks/card';
 @import 'blocks/card-catalog';
 @import 'blocks/button';
@@ -152,5 +153,4 @@ body {
 
 .wrapper {
     transition: transform 0.5s ease-in-out;
-
 }
