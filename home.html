@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220825192622">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220826154134">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +36,34 @@
 							<li class="info-nav__item">
 								<a class="info-nav__link" href="#">Оплата</a>
 							</li>
+							<li class="info-nav__item desktop">
+								<a class="info-nav__link" href="#">Отзывы</a>
+							</li>
+							<li class="info-nav__item desktop">
+								<a class="info-nav__link" href="#">Блог</a>
+							</li>
 							<li class="info-nav__item">
 								<a class="info-nav__link" href="#">
 									Информация
 									<img src="img/icons/arrow-menu.svg" alt="" />
 								</a>
+								<ul class="info-nav__sublist">
+									<li class="info-nav__subitem">
+										<a class="info-nav__sublink" href="#">Гарантии</a>
+									</li>
+									<li class="info-nav__subitem">
+										<a class="info-nav__sublink" href="#">Вопрос и ответ</a>
+									</li>
+									<li class="info-nav__subitem">
+										<a class="info-nav__sublink" href="#">Корпоративным клиентам</a>
+									</li>
+									<li class="info-nav__subitem">
+										<a class="info-nav__sublink" href="#">О компании</a>
+									</li>
+								</ul>
+							</li>
+							<li class="info-nav__item desktop">
+								<a class="info-nav__link" href="#">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -91,6 +114,10 @@
 							<img class="" src="img/logo-mobile.png" alt="logo" />
 						</picture>
 					</a>
+					<p class="header__top-desc">
+						Доставка цветов<br />
+						в Воронеже
+					</p>
 					<a class="header__top-phone" href="#">
 						<svg class="icon" height="24" width="24">
 							<use xlink:href="img/icons/icons.svg#svg-call"></use>
@@ -105,6 +132,77 @@
 								</svg>
 							</button>
 						</form>
+					</div>
+					<div class="header__top-phones phones-header">
+						<div class="phones-header__items" data-spollers>
+							<div class="phones-header__item">
+								<a class="phones-header__link" href="#"> +7 (920) 211-49-03 </a>
+								<button type="button" data-spoller class="phones-header__arrow">
+									<img src="img/icons/arrow-menu.svg" alt="arrow down" />
+								</button>
+								<div class="phones-header__wrap">
+									<ul class="phones-header__list">
+										<li>
+											<a href="#" class="phones-header__phone phone">
+												<svg width="18" height="18">
+													<use xlink:href="img/icons/icons.svg#svg-phone"></use>
+												</svg>
+												<span>+7 (920) 211-49-03</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="phones-header__phone address">
+												<svg width="18" height="18">
+													<use xlink:href="img/icons/icons.svg#svg-location"></use>
+												</svg>
+												<span>ул. Революции 1905 года 80</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="phones-header__phone address">
+												<svg width="18" height="18">
+													<use xlink:href="img/icons/icons.svg#svg-location"></use>
+												</svg>
+												<span>ул. Вл. Невского 17</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="phones-header__phone email">
+												<svg width="18" height="18">
+													<use xlink:href="img/icons/icons.svg#svg-mail"></use>
+												</svg>
+												<span>info@lavkaroz.ru</span>
+											</a>
+										</li>
+									</ul>
+									<hr class="phones-header__line" />
+									<p>Напишите нам:</p>
+									<ul class="phones-header__social-list">
+										<li>
+											<a href="#">
+												<picture><source srcset="img/icons/whats.webp" type="image/webp"><img src="img/icons/whats.png" alt="whatsup" /></picture>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/icons/telegram.webp" type="image/webp"><img src="img/icons/telegram.png" alt="telegram" /></picture>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/icons/vk.webp" type="image/webp"><img src="img/icons/vk.png" alt="vk" /></picture>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt="instagram" /></picture>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<button class="phones-header__callback">Заказать звонок</button>
 					</div>
 					<div class="header__top-actions">
 						<ul class="header__top-list">
@@ -123,40 +221,126 @@
 								</a>
 							</li>
 						</ul>
-						<a class="header__top-cart" href="#">
-							16 500 ₽
-						</a>
+						<a class="header__top-cart" href="#"> 16 500 ₽ </a>
 					</div>
 				</div>
 			</div>
+
 			<div class="header__menu menu">
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="" class="menu__link" data-goto=".box">Пункт 1</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link" data-goto=".box2">Пункт 2</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link" data-goto=".box3">Пункт 3</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link" data-goto=".box4">Пункт 4</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link">Пункт</a>
-						</li>
-						<li class="menu__item">
-							<a href="" class="menu__link">Пункт</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="header__menu-container">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link discount">
+									<img class="menu__link-img" src="img/icons/discount.svg" alt="discount">
+									<span>АКЦИИ</span>
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<span>Цветы поштучно</span>
+									<img src="img/icons/arrow-menu.svg" alt="arrow icon">
+								</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Голландские розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Местная роза</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Кустовые розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Пионовидные розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Букет из 101 розы</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<span>Розы</span>
+									<img src="img/icons/arrow-menu.svg" alt="arrow icon">
+								</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Голландские розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Местная роза</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Кустовые розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Пионовидные розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Букет из 101 розы</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<span>Букеты</span>
+									<img src="img/icons/arrow-menu.svg" alt="arrow icon">
+								</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Голландские розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Местная роза</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Кустовые розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Пионовидные розы</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="#">Букет из 101 розы</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<span>Композиции</span>
+									<img src="img/icons/arrow-menu.svg" alt="arrow icon">
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<span>Подарки</span>
+									<img src="img/icons/arrow-menu.svg" alt="arrow icon">
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">
+									<span>Шары</span>
+									<img src="img/icons/arrow-menu.svg" alt="arrow icon">
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Свадебные букеты</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Повод</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
 				<button type="button" class="menu__icon icon-menu">
 					<span></span>
 				</button>
 			</div>
 		</header>
+
+
 
 		<main class="page">
 			<section class="promo">
@@ -501,6 +685,7 @@
 					</button>
 				</div>
 			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -562,7 +747,7 @@
 	</div>
 </div> -->
 
-	<script src="js/app.min.js?_v=20220825192622"></script>
+	<script src="js/app.min.js?_v=20220826154134"></script>
 </body>
 
 </html>
