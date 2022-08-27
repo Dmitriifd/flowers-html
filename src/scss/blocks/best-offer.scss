@@ -1,0 +1,41 @@
+.best-offer {
+	padding-bottom: 60px;
+	
+	&__container {
+		position: relative;
+	}
+	&__title-wrapper {
+	}
+	&__title {
+	}
+	&__title-link {
+	}
+	&__slider {
+	}
+	&__wrapper {
+	}
+	&__slide {
+	}
+	&__slider-button {
+	}
+	&__slider-prev {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: -5px;
+		z-index: 1;
+		@media (min-width: $pc) {
+			display: block;
+		}
+	}
+	&__slider-next {
+		display: none;
+		position: absolute;
+		top: 50%;
+		right: -5px;
+		z-index: 1;
+		@media (min-width: $pc) {
+			display: block;
+		}
+	}
+}

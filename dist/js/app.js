@@ -3792,6 +3792,128 @@
             },
             on: {}
         });
+        if (document.querySelector(".best-offer__slider")) new core(".best-offer__slider", {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            speed: 800,
+            navigation: {
+                prevEl: ".best-offer__slider-prev",
+                nextEl: ".best-offer__slider-next"
+            },
+            breakpoints: {
+                340: {
+                    slidesPerView: 1.2
+                },
+                375: {
+                    slidesPerView: 1.3
+                },
+                400: {
+                    slidesPerView: 1.4
+                },
+                432: {
+                    slidesPerView: 1.5
+                },
+                468: {
+                    slidesPerView: 1.7
+                },
+                534: {
+                    slidesPerView: 1.9
+                },
+                588: {
+                    slidesPerView: 2
+                },
+                620: {
+                    slidesPerView: 2.2
+                },
+                680: {
+                    slidesPerView: 2.4
+                },
+                740: {
+                    slidesPerView: 2.7
+                },
+                840: {
+                    slidesPerView: 3
+                },
+                920: {
+                    slidesPerView: 3.2
+                },
+                980: {
+                    slidesPerView: 3.4
+                },
+                1040: {
+                    slidesPerView: 3.7
+                },
+                1120: {
+                    slidesPerView: 4,
+                    spaceBetween: 25
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".new-products__slider")) new core(".new-products__slider", {
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            speed: 800,
+            navigation: {
+                prevEl: ".new-products__slider-prev",
+                nextEl: ".new-products__slider-next"
+            },
+            breakpoints: {
+                340: {
+                    slidesPerView: 1.2
+                },
+                375: {
+                    slidesPerView: 1.3
+                },
+                400: {
+                    slidesPerView: 1.4
+                },
+                432: {
+                    slidesPerView: 1.5
+                },
+                468: {
+                    slidesPerView: 1.7
+                },
+                534: {
+                    slidesPerView: 1.9
+                },
+                588: {
+                    slidesPerView: 2
+                },
+                620: {
+                    slidesPerView: 2.2
+                },
+                680: {
+                    slidesPerView: 2.4
+                },
+                740: {
+                    slidesPerView: 2.7
+                },
+                840: {
+                    slidesPerView: 3
+                },
+                920: {
+                    slidesPerView: 3.2
+                },
+                980: {
+                    slidesPerView: 3.4
+                },
+                1040: {
+                    slidesPerView: 3.7
+                },
+                1120: {
+                    slidesPerView: 4,
+                    spaceBetween: 25
+                }
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
@@ -3810,7 +3932,7 @@
     const cardList = document.querySelector(".card-list__catalog");
     const cardDesc = document.querySelectorAll(".card-catalog__desc");
     const cardCatalogLabels = document.querySelectorAll(".card-catalog__labels");
-    const wrapper = document.querySelector(".wrapper");
+    document.querySelector(".wrapper");
     const popup = document.querySelector(".header-popup");
     const popupBtnClose = document.querySelector(".header-popup__button");
     const headerLabel = document.querySelector(".header-label");
@@ -3845,12 +3967,7 @@
     navbarList.addEventListener("click", navBarClickHandler);
     try {
         popupBtnClose.addEventListener("click", (() => {
-            popup.classList.add("hide");
-            if (popup.classList.contains("hide")) {
-                const height = getComputedStyle(popup).height;
-                wrapper.style.cssText = `\n        transform: translate3d(0, -${height}, 0);\n        `;
-                popup.style.cssText = `\n        transform: translate3d(0, -${height}, 0);\n        `;
-            }
+            _slideUp(popup);
         }));
     } catch (error) {
         console.log(error);

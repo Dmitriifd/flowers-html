@@ -1,5 +1,5 @@
 // Подключение функционала "Чертогов Фрилансера"
-import { isMobile } from './functions.js';
+import { isMobile, _slideUp } from './functions.js';
 // Подключение списка активных модулей
 import { flsModules } from './modules.js';
 
@@ -34,9 +34,9 @@ likeBtn.forEach((fovoriteBtn) => {
 	});
 });
 
-/* Favorite */
 
 /* NavBar */
+
 const navbarlink = document.querySelectorAll('.navbar-mobile__link');
 const navbarList = document.querySelector('.navbar-mobile__list');
 
@@ -59,24 +59,18 @@ const navBarClickHandler = (e) => {
 
 navbarList.addEventListener('click', navBarClickHandler);
 
-/* NavBar */
+
+/* header-popup */
 
 try {
 	popupBtnClose.addEventListener('click', () => {
-		popup.classList.add('hide');
-		if (popup.classList.contains('hide')) {
-			const height = getComputedStyle(popup).height;
-			wrapper.style.cssText = `
-        transform: translate3d(0, -${height}, 0);
-        `;
-			popup.style.cssText = `
-        transform: translate3d(0, -${height}, 0);
-        `;
-		}
+		_slideUp(popup);
 	});
 } catch (error) {
 	console.log(error);
 }
+
+/* likeBtn &  viewBtn */
 
 try {
 	likeBtn.forEach((btn) => {
@@ -110,6 +104,8 @@ try {
 } catch (error) {
 	console.log(error);
 }
+
+/* copy promocode text */
 
 const btnPromocode = document.querySelector('.promocode__button');
 const promocodeNotion = document.querySelector('.promocode__notion');

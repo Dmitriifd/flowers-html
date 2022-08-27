@@ -1,0 +1,23 @@
+.title-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+
+	@media (min-width: $mobile) {
+		margin-bottom: 30px;
+	}
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: rem(20);
+	line-height: math.div(30, 20);
+
+	@media (min-width: $mobile) {
+		font-size: rem(30);
+		line-height: math.div(50, 30);
+	}
+}
