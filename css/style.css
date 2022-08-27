@@ -1663,6 +1663,16 @@ body {
   z-index: 1;
 }
 
+.best-offer__slider-button.best-offer__slider-prev.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.best-offer__slider-button.best-offer__slider-next.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
 .navbar-mobile {
   position: fixed;
   left: 0px;
@@ -1756,6 +1766,16 @@ body {
   z-index: 1;
 }
 
+.new-products__slider-button.new-products__slider-prev.swiper-button-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.new-products__slider-button.new-products__slider-next.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
 .footer {
   background-color: #f2f6f7;
   padding-top: 30px;
@@ -1831,14 +1851,6 @@ body {
 .footer-title {
   margin-top: 10px;
   margin-bottom: 15px;
-}
-
-.wrapper {
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 /**
@@ -2836,6 +2848,17 @@ button.swiper-pagination-bullet {
             flex: 0 1 33.33333%;
   }
 
+  .footer__column:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+
   .footer__title {
     margin-bottom: 10px;
   }
@@ -2882,6 +2905,10 @@ button.swiper-pagination-bullet {
             column-gap: 23px;
     -ms-grid-row-span: 2;
     grid-row: span 2;
+  }
+
+  .footer-title {
+    margin-top: 0;
   }
 }
 
@@ -2984,8 +3011,8 @@ button.swiper-pagination-bullet {
 
   .footer__column {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+        -ms-flex: 0 1 calc(25% - 45px);
+            flex: 0 1 calc(25% - 45px);
   }
 }
 
@@ -3052,6 +3079,12 @@ button.swiper-pagination-bullet {
         flex-wrap: nowrap;
   }
 
+  .footer__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
   .footer__contacts-title {
     white-space: nowrap;
   }
@@ -3101,6 +3134,14 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1120px) {
   .bouquets__slider.swiper {
+    overflow: visible;
+  }
+
+  .best-offer__slider.swiper {
+    overflow: visible;
+  }
+
+  .new-products__slider.swiper {
     overflow: visible;
   }
 }
