@@ -39,3 +39,19 @@
 		}
 	}
 }
+
+.best-offer__slider.swiper {
+	@media (max-width: 1120px) {
+		overflow: visible;
+	}
+}
+
+.best-offer__slider-button.best-offer__slider-prev.swiper-button-disabled {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.best-offer__slider-button.best-offer__slider-next.swiper-button-disabled {
+	pointer-events: none;
+	opacity: 0;
+}

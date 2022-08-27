@@ -29,7 +29,17 @@
 			flex: 0 1 33.33333%;
 		}
 		@media (min-width: 1000px) {
+			flex: 0 1 calc(25% - 45px);
+		}
+		@media (min-width: 1170px) {
 			flex: 0 1 auto;
+		}
+	}
+	&__column:nth-child(4) {
+		@media (min-width: $mobile) {
+			display: flex;
+			flex-direction: column;
+			row-gap: 30px;
 		}
 	}
 	&__spollers {
@@ -148,4 +158,8 @@
 .footer-title {
 	margin-top: 10px;
 	margin-bottom: 15px;
+
+	@media (min-width: $mobile) {
+		margin-top: 0;
+	}
 }

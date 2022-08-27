@@ -39,3 +39,20 @@
 		}
 	}
 }
+
+.new-products__slider.swiper {
+	@media (max-width: 1120px) {
+		overflow: visible;
+	}
+}
+
+.new-products__slider-button.new-products__slider-prev.swiper-button-disabled {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.new-products__slider-button.new-products__slider-next.swiper-button-disabled {
+	pointer-events: none;
+	opacity: 0;
+}
+
