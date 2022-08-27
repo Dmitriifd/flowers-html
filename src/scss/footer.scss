@@ -1,0 +1,151 @@
+.footer {
+	background-color: #f2f6f7;
+	padding-top: 30px;
+	padding-bottom: 90px;
+
+	@media (min-width: $mobile) {
+		padding-bottom: 20px;
+	}
+
+	&__container {
+	}
+	&__top {
+		@media (min-width: $mobile) {
+			display: flex;
+			flex-wrap: wrap;
+			padding-bottom: 30px;
+			row-gap: 20px;
+		}
+		@media (min-width: 1000px) {
+			gap: 45px;
+		}
+		@media (min-width: 1170px) {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
+	}
+	&__column {
+		@media (min-width: $mobile) {
+			flex: 0 1 33.33333%;
+		}
+		@media (min-width: 1000px) {
+			flex: 0 1 auto;
+		}
+	}
+	&__spollers {
+	}
+	&__spollers-item {
+	}
+	&__title {
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: math.div(26, 18);
+
+		@media (min-width: $mobile) {
+			margin-bottom: 10px;
+		}
+	}
+	&__list {
+	}
+	&__item {
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__link {
+	}
+	&__contacts {
+		display: grid;
+		gap: 15px 20px;
+		grid-template-columns: 1fr 1fr;
+		padding-bottom: 20px;
+		@media (min-width: $mobile) {
+			grid-template-columns: 1fr;
+			font-size: rem(16);
+			line-height: math.div(22, 16);
+		}
+	}
+	&__contacts-item {
+	}
+	&__contacts-title {
+		font-size: 14px;
+		line-height: 20px;
+
+		@media (min-width: 1170px) {
+			white-space: nowrap;
+		}
+	}
+	&__contacts-link {
+		font-weight: 700;
+		font-size: rem(16);
+
+		@media (max-width: 374px) {
+			font-size: 14px;
+		}
+	}
+	&__bottom {
+		@media (min-width: $mobile) {
+			display: grid;
+			row-gap: 20px;
+			grid-template-columns: 1fr 1fr;
+			padding-top: 20px;
+			border-top: 1px solid #e2e4eb;
+		}
+		@media (min-width: 1170px) {
+			padding-top: 25px;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+	&__copy {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 20px;
+		padding-top: 20px;
+		border-top: 1px solid #e2e4eb;
+
+		@media (min-width: $mobile) {
+			padding-top: 0;
+			border-top: none;
+			margin-bottom: 0;
+		}
+	}
+	&__pay-list {
+		display: flex;
+		column-gap: 15px;
+		margin-bottom: 20px;
+		@media (min-width: $mobile) {
+			order: 2;
+			margin-bottom: 0;
+		}
+		@media (min-width: 1170px) {
+			order: 0;
+		}
+	}
+	&__social-wrapper {
+		@media (min-width: $mobile) {
+			display: flex;
+			align-items: center;
+			column-gap: 23px;
+			grid-row: span 2;
+		}
+		@media (min-width: 1170px) {
+			grid-row: unset;
+		}
+	}
+	&__social-wrapper p {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+	&__social-list {
+		display: flex;
+		column-gap: 15px;
+	}
+}
+
+.footer-title {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
