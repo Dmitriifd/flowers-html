@@ -23,6 +23,7 @@ $mainColor: #222a46; // Цвет шрифта по умолчанию
 $red: #e2195b;
 $green: #0093a2;
 $gray: #505567;
+$gray-light: #E8F2F3;
 $orange: #ff8642;
 
 // НАСТРОЙКИ
@@ -150,6 +151,7 @@ body {
 @import 'blocks/navbar-mobile';
 @import 'blocks/slider-button';
 @import 'blocks/new-products';
+@import 'blocks/category';
 @import 'footer';
 
 // Подключение стилей отдельных страниц
