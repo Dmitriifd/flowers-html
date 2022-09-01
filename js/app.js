@@ -3957,6 +3957,24 @@
             },
             on: {}
         });
+        if (document.querySelector(".reviews__slider")) new core(".reviews__slider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            modules: [ Navigation ],
+            observer: true,
+            observeParents: true,
+            speed: 800,
+            navigation: {
+                prevEl: ".reviews__button-prev",
+                nextEl: ".reviews__button-next"
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 1
+                }
+            },
+            on: {}
+        });
     }
     window.addEventListener("load", (function(e) {
         initSliders();
