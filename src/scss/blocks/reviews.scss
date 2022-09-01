@@ -1,0 +1,161 @@
+.reviews {
+	background-color: $gray-light;
+	padding: 40px 0;
+
+	@media (min-width: $pc) {
+			padding: 80px 0;
+	}
+
+	&__container {
+		position: relative;
+	}
+	&__head {
+		text-align: center;
+		@media (min-width: $mobile) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 30px;
+			text-align: left;
+		}
+
+		@media (min-width: $tablet) {
+				margin-bottom: 40px;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: rem(20);
+		line-height: math.div(30, 20);
+		margin-bottom: 20px;
+
+		@media (min-width: $mobile) {
+			font-size: rem(30);
+			line-height: math.div(40, 30);
+		}
+		@media (min-width: $tablet) {
+			font-size: rem(40);
+			line-height: math.div(50, 40);
+		}
+	}
+	&__link {
+		display: block;
+		text-align: center;
+		max-width: 186px;
+		font-weight: 500;
+		margin: 0 auto;
+		background: #ffffff;
+		border: 1px solid #0093a2;
+		border-radius: 5px;
+		padding: 13px 30px;
+		color: $green;
+		margin-bottom: 20px;
+
+		@media (min-width: $mobile) {
+			margin: 0;
+		}
+
+		&--send {
+		}
+		&--all {
+			margin: 0 auto;
+			border: none;
+			box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+		}
+	}
+	&__slider {
+	}
+	&__wrapper {
+	}
+	&__slide {
+	}
+	&__card {
+		padding: 25px;
+		background-color: #ffffff;
+		box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+		border-radius: 10px;
+		margin-bottom: 20px;
+
+		@media (min-width: $mobile) {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			padding: 25px 40px 25px 40px;
+		}
+		@media (min-width: $tablet) {
+			padding: 40px 50px;
+			margin-bottom: 40px;
+		}
+	}
+	&__content {
+		margin-bottom: 15px;
+	}
+	&__rating {
+		margin-bottom: 10px;
+	}
+	&__author {
+		font-weight: 700;
+		margin-bottom: 10px;
+
+		@media (min-width: $mobile) {
+			font-size: rem(18);
+			line-height: math.div(26, 18);
+		}
+		@media (min-width: $tablet) {
+			margin-bottom: 15px;
+		}
+	}
+	&__text {
+		font-size: rem(14);
+		line-height: math.div(20, 14);
+		margin-bottom: 15px;
+
+		@media (min-width: $mobile) {
+			font-size: rem(16);
+			line-height: math.div(24, 16);
+		}
+		@media (min-width: $tablet) {
+			margin-bottom: 40px;
+		}
+	}
+	&__info {
+		font-size: rem(14);
+		line-height: math.div(20, 14);
+	}
+	&__info-link {
+		font-size: rem(14);
+		line-height: math.div(20, 14);
+		color: $green;
+		font-weight: 500;
+	}
+	&__photo {
+		flex-shrink: 0;
+		width: 100px;
+		height: 100px;
+		border: 2px solid #0093a2;
+		border-radius: 50%;
+		padding: 10px;
+
+		img {
+			border-radius: 50%;
+			max-width: 100%;
+		}
+
+		@media (min-width: $mobile) {
+			width: 140px;
+			height: 140px;
+		}
+	}
+	&__button-prev {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: 3;
+	}
+	&__button-next {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		z-index: 3;
+	}
+}
