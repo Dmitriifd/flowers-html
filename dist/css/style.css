@@ -2126,7 +2126,7 @@ body {
 }
 
 .no-webp .flowers-delivery::after{
-  background-image: url("img/delivery-left-bg.png"); }
+  background-image: url("../img/delivery-left-bg.png"); }
 
 .flowers-delivery::after {
   content: "";
@@ -2140,7 +2140,7 @@ body {
 }
 
 .no-webp .flowers-delivery::before{
-  background-image: url("img/delivery-right-bg.png"); }
+  background-image: url("../img/delivery-right-bg.png"); }
 
 .flowers-delivery::before {
   content: "";
@@ -2178,7 +2178,7 @@ body {
 }
 
 .no-webp .flower-shop{
-  background-image: url("img/lavka-roz-bg.png"); }
+  background-image: url("../img/lavka-roz-bg.png"); }
 
 .flower-shop {
   padding-top: 40px;
@@ -4166,8 +4166,8 @@ button.swiper-pagination-bullet {
   }
 }
 
-.webp .flowers-delivery::after{ background-image: url(img/delivery-left-bg.webp); }
+.webp .flowers-delivery::after{ background-image: url(../img/delivery-left-bg.webp); }
 
-.webp .flowers-delivery::before{ background-image: url(img/delivery-right-bg.webp); }
+.webp .flowers-delivery::before{ background-image: url(../img/delivery-right-bg.webp); }
 
-.webp .flower-shop{ background-image: url(img/lavka-roz-bg.webp); }
+.webp .flower-shop{ background-image: url(../img/lavka-roz-bg.webp); }
