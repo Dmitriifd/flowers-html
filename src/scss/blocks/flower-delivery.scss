@@ -1,0 +1,103 @@
+.flowers-delivery {
+	position: relative;
+	padding: 40px 0;
+	background-color: $gray-light;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -55px;
+		width: 252px;
+		height: 132px;
+		background-image: url('../../img/delivery-left-bg.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		@media (min-width: $mobile) {
+			left: -111px;
+			height: 207px;
+		}
+		@media (min-width: $pc) {
+			width: 300px;
+			height: 236px;
+			left: 0;
+		}
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -86px;
+		width: 190px;
+		height: 100px;
+		background-image: url('../../img/delivery-right-bg.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		@media (min-width: $mobile) {
+			right: -50px;
+			height: 160px;
+		}
+		@media (min-width: $pc) {
+			width: 300px;
+			height: 236px;
+			right: 0;
+		}
+	}
+
+	@media (min-width: $mobile) {
+		padding: 60px 0;
+	}
+	@media (min-width: $tablet) {
+		padding: 70px 0;
+	}
+
+	&__container {
+	}
+	&__title {
+		max-width: 191px;
+		margin: 0 auto;
+		font-weight: 700;
+		font-size: rem(20);
+		line-height: math.div(30, 20);
+		text-align: center;
+		margin-bottom: 20px;
+
+		@media (min-width: $mobile) {
+			max-width: 100%;
+			margin-bottom: 30px;
+			font-size: rem(30);
+			line-height: math.div(40, 30);
+		}
+		@media (min-width: $tablet) {
+			font-size: rem(40);
+			line-height: math.div(50, 40);
+		}
+	}
+	&__wrapper {
+		position: relative;
+		z-index: 1;
+		padding: 20px 25px;
+		background-color: #ffffff;
+		box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.15);
+		border-radius: 10px;
+
+		@media (min-width: $mobile) {
+			padding: 30px;
+		}
+
+		@media (min-width: $pc) {
+			padding: 50px 99px;
+		}
+	}
+	&__text {
+		@media (min-width: $mobile) {
+			font-size: rem(18);
+			line-height: math.div(26, 18);
+		}
+	}
+	&__text:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
