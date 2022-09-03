@@ -181,23 +181,24 @@ function initSliders() {
     // Указываем скласс нужного слайдера
     // Создаем слайдер
     new Swiper('.promo__slider', {
-      // Указываем скласс нужного слайдера
-      // Подключаем модули слайдера
-      // для конкретного случая
-      slidesPerView: 1,
-      modules: [Navigation, Pagination],
-      observer: true,
-      observeParents: true,
-      // autoHeight: true,
-      speed: 800,
+			// Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			slidesPerView: 1,
+			modules: [Navigation, Pagination],
+			observer: true,
+			observeParents: true,
+			spaceBetween: 20,
+			// autoHeight: true,
+			speed: 800,
 
-      //touchRatio: 0,
-      //simulateTouch: false,
-      //loop: true,
-      //preloadImages: false,
-      //lazy: true,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
 
-      /*
+			/*
 			// Эффекты
 			effect: 'fade',
 			autoplay: {
@@ -206,32 +207,29 @@ function initSliders() {
 			},
 			*/
 
-      // Пагинация
+			// Пагинация
 
-      pagination: {
-        el: '.promo-pagination',
-        clickable: true,
-      },
+			pagination: {
+				el: '.promo-pagination',
+				clickable: true,
+			},
 
-      //   Кнопки "влево/вправо"
-      navigation: {
-        prevEl: '.promo__slide-prev',
-        nextEl: '.promo__slide-next',
-      },
+			//   Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.promo__slide-prev',
+				nextEl: '.promo__slide-next',
+			},
 
-      // Брейкпоинты
+			// Брейкпоинты
 
-      breakpoints: {
-        320: {
-          //   slidesPerView: 1.1,
-          //   spaceBetween: 10,
-          // autoHeight: true,
-        }
-      },
-
-      // События
-      on: {},
-    });
+			// breakpoints: {
+			// 	320: {
+			// 		//   slidesPerView: 1.1,
+			// 		//   spaceBetween: 10,
+			// 		// autoHeight: true,
+			// 	},
+			// },
+		});
   }
   if (document.querySelector('.bouquets__slider')) {
     // Указываем скласс нужного слайдера
