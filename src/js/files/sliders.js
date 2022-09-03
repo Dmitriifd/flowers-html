@@ -213,14 +213,6 @@ function initSliders() {
         clickable: true,
       },
 
-      // Скроллбар
-      /*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
-
       //   Кнопки "влево/вправо"
       navigation: {
         prevEl: '.promo__slide-prev',
@@ -234,33 +226,7 @@ function initSliders() {
           //   slidesPerView: 1.1,
           //   spaceBetween: 10,
           // autoHeight: true,
-        },
-        440: {
-          slidesPerView: 1.2,
-          spaceBetween: 15,
-          // autoHeight: true,
-        },
-        520: {
-          slidesPerView: 1.4,
-          spaceBetween: 15,
-          // autoHeight: true,
-        },
-        640: {
-          slidesPerView: 1.7,
-          spaceBetween: 15,
-          // autoHeight: true,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        992: {
-          //   slidesPerView: 3,
-          //   spaceBetween: 20,
-        },
-        1268: {
-          //   slidesPerView: 4,
-        },
+        }
       },
 
       // События

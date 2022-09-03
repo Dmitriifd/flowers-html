@@ -13,6 +13,22 @@ const popup = document.querySelector('.header-popup');
 const popupBtnClose = document.querySelector('.header-popup__button');
 
 const headerLabel = document.querySelector('.header-label');
+const flowersDeliveryButton = document.querySelector('.flowers-delivery__button');
+const flowersDeliveryWrapper = document.querySelector('.flowers-delivery__wrapper');
+const buttonText = flowersDeliveryButton.querySelector('span');
+
+/* Кнопка свернуть */
+
+flowersDeliveryButton.addEventListener('click', () => {
+	flowersDeliveryWrapper.classList.toggle('active');
+	flowersDeliveryButton.classList.toggle('active');
+
+	if (flowersDeliveryButton.classList.contains('active')) {
+		buttonText.textContent = 'Развернуть текст';
+	} else {
+		buttonText.textContent = 'Свернуть текст';
+	}
+});
 
 /* Favorite */
 
@@ -33,7 +49,6 @@ likeBtn.forEach((fovoriteBtn) => {
 		console.log(counter);
 	});
 });
-
 
 /* NavBar */
 
@@ -58,7 +73,6 @@ const navBarClickHandler = (e) => {
 };
 
 navbarList.addEventListener('click', navBarClickHandler);
-
 
 /* header-popup */
 

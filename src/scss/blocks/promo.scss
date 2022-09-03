@@ -142,6 +142,10 @@
 .promocode {
 	position: relative;
 	display: inline-block;
+
+	@media (max-width: $mobile) {
+			padding-top: 30px;
+	}
 }
 .promocode__notion {
 	position: absolute;
