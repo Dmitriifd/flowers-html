@@ -3709,25 +3709,7 @@
                 nextEl: ".promo__slide-next"
             },
             breakpoints: {
-                320: {},
-                440: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 15
-                },
-                520: {
-                    slidesPerView: 1.4,
-                    spaceBetween: 15
-                },
-                640: {
-                    slidesPerView: 1.7,
-                    spaceBetween: 15
-                },
-                768: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                },
-                992: {},
-                1268: {}
+                320: {}
             },
             on: {}
         });
@@ -3997,6 +3979,14 @@
     const popup = document.querySelector(".header-popup");
     const popupBtnClose = document.querySelector(".header-popup__button");
     const headerLabel = document.querySelector(".header-label");
+    const flowersDeliveryButton = document.querySelector(".flowers-delivery__button");
+    const flowersDeliveryWrapper = document.querySelector(".flowers-delivery__wrapper");
+    const buttonText = flowersDeliveryButton.querySelector("span");
+    flowersDeliveryButton.addEventListener("click", (() => {
+        flowersDeliveryWrapper.classList.toggle("active");
+        flowersDeliveryButton.classList.toggle("active");
+        if (flowersDeliveryButton.classList.contains("active")) buttonText.textContent = "Развернуть текст"; else buttonText.textContent = "Свернуть текст";
+    }));
     let counter = 0;
     likeBtn.forEach((fovoriteBtn => {
         fovoriteBtn.addEventListener("click", (() => {
