@@ -10,7 +10,9 @@
   }
 }
 
-.size-chooser__label {
+.size-chooser__label {}
+
+.size-chooser__span {
   padding: 4px 10px;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -26,7 +28,7 @@
   transition: background-color 0.2s linear;
 }
 
-.size-chooser__label:hover {
+.size-chooser__span:hover {
   transition: border-color 0.2s linear;
   background-color: #0093a2;
   border: 1px solid #0093a2;
@@ -34,11 +36,17 @@
 }
 
 .size-chooser__item {
-  display: none;
+  // display: none;
 }
 
-.size-chooser__item:checked + .size-chooser__label {
+.size-chooser__item:checked + .size-chooser__span {
   background-color: #0093a2;
   border-color: transparent;
   color: #ffffff;
 }
+
+.size-chooser__item:focus + .size-chooser__span {
+    border: 1px solid $green;
+}
+
+

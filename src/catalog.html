@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Каталог" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="catalog">
+					<div class="catalog__container">
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs-item">
+								<a class="breadcrumbs-link" href="#">Главная</a>
+							</li>
+							<li class="breadcrumbs-item">
+								<a class="breadcrumbs-link active" href="#">Букеты из роз</a>
+							</li>
+						</ul>
+						<div class="catalog__wrapper">
+							<section class="catalog__filter filter">
+								<h2 class="visually-hidden">Фильтр товаров</h2>
+								<ul class="catalog__category">
+									<li class="catalog__category-item">
+										<a class="catalog__category-link" href="#">Букеты из роз</a>
+									</li>
+									<li class="catalog__category-item">
+										<a class="catalog__category-link" href="#">Местные розы</a>
+									</li>
+									<li class="catalog__category-item">
+										<a class="catalog__category-link" href="#">Эквадорские розы</a>
+									</li>
+									<li class="catalog__category-item">
+										<a class="catalog__category-link" href="#">Кенийские розы</a>
+									</li>
+								</ul>
+							</section>
+							<section class="catalog__content">
+								<div class="catalog__content-inner">
+									<div class="catalog__content-head">
+										<h2 class="catalog__content-title">Букеты из роз</h2>
+										<div class="catalog__sort">
+											<span>Сортировать:</span>
+											<select class="catalog__sort-select" name="form[]">
+												<option value="1" selected>По популярности</option>
+												<option value="2">По алфавиту</option>
+												<option value="3">По популярности</option>
+												<option value="4">По убыванию цены</option>
+												<option value="4">По возрастанию цены</option>
+											</select>
+										</div>
+									</div>
+									<ul class="catalog__buttons-list">
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 25 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 21 розы</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 39 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 301 розы</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 35 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 31 розы</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 33 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 37 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 45 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 41 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 49 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 15 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты 51 розы</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-btn">Букеты из 55 роз</button>
+										</li>
+										<li class="catalog__buttons-item">
+											<button class="catalog__buttons-more">
+												Показать еще
+												<svg width="12" height="8" viewbox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.41602 1.91699L5.99935 6.08366L10.5827 1.91699" stroke="#0093A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</li>
+									</ul>
+									<div class="catalog__filter-inner">
+										<button class="catalog__filter-button">
+											<svg height="24" width="24">
+												<use xlink:href="img/icons/icons.svg#svg-filter"></use>
+											</svg>
+											<span>Фильтры</span>
+											<span class="catalog__filter-count">2</span>
+										</button>
+										<select name="form[]" class="catalog__sort-select--mobile">
+											<option value="1" selected>По популярности</option>
+											<option value="2">По алфавиту</option>
+											<option value="3">По популярности</option>
+											<option value="4">По убыванию цены</option>
+											<option value="5">По возрастанию цены</option>
+										</select>
+									</div>
+								</div>
+								<ul class="card-list__catalog">
+									<li class="card-list__item">
+										<article class="card-catalog">
+											<div class="card-catalog__header">
+												<div class="card-catalog__controls">
+													<buton class="card__favorite-button card__favorite-button--catalog favorite-button">
+														<span class="visually-hidden">Добавить в избранное.</span>
+													</buton>
+													<buton class="card-catalog__view-button">
+														<span class="visually-hidden">Быстрый просмотр</span>
+													</buton>
+												</div>
+												<div class="card-catalog__slider swiper">
+													<div class="card-catalog__wrapper swiper-wrapper">
+														<div class="card-catalog__slide swiper-slide">
+															<img src="../../img/flowers/1.jpg" alt="" />
+															<div class="card-catalog__labels">
+																<p class="card-catalog__label"><span class="card-catalog__label--size1">35 см</span> <span class="card-catalog__label--size2">50 см</span></p>
+															</div>
+															<div class="card-catalog__desc">
+																<p>Нежный, насыщенный и ароматный букет белых альстромерий, лавандовых роз и сантини.</p>
+															</div>
+														</div>
+														<div class="card-catalog__slide swiper-slide">
+															<img src="../../img/flowers/2.jpg" alt="" />
+															<div class="card-catalog__labels">
+																<span class="card-catalog__label card-catalog__label--size"> 35 см 50 см </span>
+															</div>
+															<div class="card-catalog__desc">
+																<p>Нежный, насыщенный и ароматный букет белых альстромерий, лавандовых роз и сантини.</p>
+															</div>
+														</div>
+														<div class="card-catalog__slide swiper-slide">
+															<img src="../../img/flowers/3.jpg" alt="" />
+															<div class="card-catalog__desc">
+																<p>Нежный, насыщенный и ароматный букет белых альстромерий, лавандовых роз и сантини.</p>
+															</div>
+														</div>
+													</div>
+													<div class="card-catalog__slider-pagination swiper-pagination"></div>
+												</div>
+											</div>
+											<div class="card-catalog__body">
+												<h2 class="card-catalog__title">
+													<a href="/">Букет 5 пионовидных роз Мисти баблс</a>
+												</h2>
+												<div class="card-catalog__info">
+													<a class="card-catalog__review" href="/">
+														<img src="../../img/icons/rating.svg" alt="rating" />
+														4.0 (15 отзывов)
+													</a>
+													<p class="card-catalog__delivery">
+														<img src="../../img/icons/delivery.svg" alt="delivery" />
+														150 мин
+													</p>
+												</div>
+												<div class="size-chooser">
+													<span>Размер:</span>
+													
+													<label class="size-chooser__label">
+														
+														<input class="size-chooser__item visually-hidden" type="radio"  value="mini" />
+														<span class="size-chooser__span">MINI</span>
+													</label>
+
+													<label class="size-chooser__label">
+														
+														<input class="size-chooser__item visually-hidden" type="radio"  value="standart" />
+														<span class="size-chooser__span">STANDART</span>
+													</label>
+
+													<label class="size-chooser__label" >
+														
+														<input class="size-chooser__item visually-hidden" type="radio"  value="maxi" />
+														<span class="size-chooser__span">MAXI</span>
+													</label>
+													
+													
+												</div>
+												<div class="card-catalog__body-control">
+													<p class="card-catalog__price">13 499 ₽<s>15 499 ₽</s></p>
+													<button class="card-catalog__button button">
+														<svg class="card-catalog__button-icon" height="24" width="24">
+															<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+														</svg>
+														В корзину
+													</button>
+												</div>
+											</div>
+										</article>
+									</li>
+									
+									<li class="card-list__item">
+										<article class="card-catalog">
+											<div class="card-catalog__header">
+												<div class="card-catalog__controls">
+													<buton class="card__favorite-button card__favorite-button--catalog favorite-button">
+														<span class="visually-hidden">Добавить в избранное.</span>
+													</buton>
+													<buton class="card-catalog__view-button">
+														<span class="visually-hidden">Быстрый просмотр</span>
+													</buton>
+												</div>
+												<div class="card-catalog__slider swiper">
+													<div class="card-catalog__wrapper swiper-wrapper">
+														<div class="card-catalog__slide swiper-slide">
+															<img src="../../img/flowers/1.jpg" alt="" />
+															<div class="card-catalog__labels">
+																<p class="card-catalog__label"><span class="card-catalog__label--size1">35 см</span> <span class="card-catalog__label--size2">50 см</span></p>
+															</div>
+															<div class="card-catalog__desc">
+																<p>Нежный, насыщенный и ароматный букет белых альстромерий, лавандовых роз и сантини.</p>
+															</div>
+														</div>
+														<div class="card-catalog__slide swiper-slide">
+															<img src="../../img/flowers/2.jpg" alt="" />
+															<div class="card-catalog__labels">
+																<span class="card-catalog__label card-catalog__label--size"> 35 см 50 см </span>
+															</div>
+															<div class="card-catalog__desc">
+																<p>Нежный, насыщенный и ароматный букет белых альстромерий, лавандовых роз и сантини.</p>
+															</div>
+														</div>
+														<div class="card-catalog__slide swiper-slide">
+															<img src="../../img/flowers/3.jpg" alt="" />
+															<div class="card-catalog__desc">
+																<p>Нежный, насыщенный и ароматный букет белых альстромерий, лавандовых роз и сантини.</p>
+															</div>
+														</div>
+													</div>
+													<div class="card-catalog__slider-pagination swiper-pagination"></div>
+												</div>
+											</div>
+											<div class="card-catalog__body">
+												<h2 class="card-catalog__title">
+													<a href="/">Букет 5 пионовидных роз Мисти баблс</a>
+												</h2>
+												<div class="card-catalog__info">
+													<a class="card-catalog__review" href="/">
+														<img src="../../img/icons/rating.svg" alt="rating" />
+														4.0 (15 отзывов)
+													</a>
+													<p class="card-catalog__delivery">
+														<img src="../../img/icons/delivery.svg" alt="delivery" />
+														150 мин
+													</p>
+												</div>
+												<div class="size-chooser">
+													<span>Размер:</span>
+													
+													<label class="size-chooser__label">
+														
+														<input class="size-chooser__item visually-hidden" type="radio"  value="mini" />
+														<span class="size-chooser__span">MINI</span>
+													</label>
+
+													<label class="size-chooser__label">
+														
+														<input class="size-chooser__item visually-hidden" type="radio"  value="standart" />
+														<span class="size-chooser__span">STANDART</span>
+													</label>
+
+													<label class="size-chooser__label" >
+														
+														<input class="size-chooser__item visually-hidden" type="radio"  value="maxi" />
+														<span class="size-chooser__span">MAXI</span>
+													</label>
+													
+													
+												</div>
+												<div class="card-catalog__body-control">
+													<p class="card-catalog__price">13 499 ₽<s>15 499 ₽</s></p>
+													<button class="card-catalog__button button">
+														<svg class="card-catalog__button-icon" height="24" width="24">
+															<use xlink:href="img/icons/icons.svg#svg-cart"></use>
+														</svg>
+														В корзину
+													</button>
+												</div>
+											</div>
+										</article>
+									</li>
+									
+									
+									
+									
+								</ul>
+							</section>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		<div class="navbar-mobile">
+			<ul class="navbar-mobile__list">
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link active" href="#navbar-home">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-home-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Главная</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-catalog">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-search-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Каталог</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-basket">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-basket-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Корзина</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-fovorite">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-favorite-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Избраное</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-user">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-user-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Мои заказы</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>

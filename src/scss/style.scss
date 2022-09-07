@@ -158,7 +158,31 @@ body {
 @import 'blocks/flower-delivery';
 @import 'blocks/flower-shop';
 @import 'blocks/contacts';
+@import 'blocks/catalog';
+@import 'blocks/breadcrumbs';
 @import 'footer';
 
 // Подключение стилей отдельных страниц
 @import 'home';
+
+.test-label {
+	display: inline-block;
+}
+
+.test-span {
+	padding: 5px;
+	border: 1px solid silver;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.test-input {
+	display: none;
+}
+
+.test-input:checked {
+	background-color: red;
+}
+.test-input:checked + .test-span {
+	background-color: red;
+}

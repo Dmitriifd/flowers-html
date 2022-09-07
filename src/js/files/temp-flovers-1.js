@@ -3,6 +3,8 @@ import { isMobile, _slideUp } from './functions.js';
 // Подключение списка активных модулей
 import { flsModules } from './modules.js';
 
+const cardList = document.querySelector('.card-list__catalog');
+const wrapper = document.querySelector('.wrapper');
 const popup = document.querySelector('.header-popup');
 const popupBtnClose = document.querySelector('.header-popup__button');
 const cardCatalog = document.querySelectorAll('.card-catalog');
@@ -35,10 +37,9 @@ try {
 	console.log(error);
 }
 
-/* Favorite button */
+/* Favorite */
 
 const likeBtn = document.querySelectorAll('.card__favorite-button');
-
 let counter = 0;
 likeBtn.forEach((fovoriteBtn) => {
 	fovoriteBtn.addEventListener('click', () => {
@@ -60,9 +61,6 @@ likeBtn.forEach((btn) => {
 	btn.addEventListener('click', ({ target }) => {
 		if (target.classList.contains('card__favorite-button')) {
 			btn.classList.toggle('red');
-		}
-		if (target.classList.contains('card__favorite-button--catalog')) {
-			btn.classList.toggle('green');
 		}
 	});
 });
@@ -101,9 +99,35 @@ try {
 	console.log(error);
 }
 
-/* viewBtn Catalog page */
+/* likeBtn &  viewBtn Catalog page */
 
 try {
+	const likeBtn = document.querySelectorAll('.card-catalog__favorite-button');
+	let counter = 0;
+	likeBtn.forEach((fovoriteBtn) => {
+		fovoriteBtn.addEventListener('click', () => {
+			if (!fovoriteBtn.classList.contains('green')) {
+				counter++;
+				headerLabel.textContent = counter;
+				headerLabel.style.display = 'block';
+			} else {
+				counter--;
+				headerLabel.textContent = counter;
+				if (counter === 0) {
+					headerLabel.style.display = 'none';
+				}
+			}
+		});
+	});
+
+	likeBtn.forEach((btn) => {
+		btn.addEventListener('click', ({ target }) => {
+			if (target.classList.contains('card-catalog__favorite-button')) {
+				btn.classList.toggle('green');
+			}
+		});
+	});
+
 	cardCatalog.forEach((card, i) => {
 		card.addEventListener('click', function ({ target }) {
 			const viewBtn = card.querySelector('.card-catalog__view-button');

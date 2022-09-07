@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Каталог" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		<div class="navbar-mobile">
+			<ul class="navbar-mobile__list">
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link active" href="#navbar-home">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-home-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Главная</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-catalog">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-search-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Каталог</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-basket">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-basket-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Корзина</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-fovorite">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-favorite-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Избраное</span>
+					</a>
+				</li>
+				<li class="navbar-mobile__item">
+					<a class="navbar-mobile__link" href="#navbar-user">
+						<svg class="navbar-mobile__icon" height="24" width="24">
+							<use xlink:href="img/icons/icons.svg#svg-user-navbar"></use>
+						</svg>
+						<span class="navbar-mobile__title">Мои заказы</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>
