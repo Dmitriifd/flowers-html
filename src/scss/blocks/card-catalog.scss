@@ -1,11 +1,13 @@
 .card-list__catalog {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(100px, 278px));
-	gap: 15px 20px;
+	grid-template-columns: repeat(auto-fit, minmax(167px, 1fr));
+	gap: 10px;
 
-	@media (max-width: 374px) {
-		grid-template-columns: 290px;
-		justify-content: center;
+	@media (min-width: 540px) {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+	@media (min-width: $mobile) {
+		gap: 20px;
 	}
 }
 
@@ -118,17 +120,27 @@
 	}
 	// .card__body
 	&__body {
-		padding: 20px;
+		padding: 15px;
 		display: flex;
 		flex-direction: column;
-		// flex: 1 1 auto;
 		height: 100%;
+
+		@media (min-width: $mobile) {
+			padding-bottom: 20px;
+		}
 	}
 	// .card__title
 	&__title {
 		font-weight: 700;
-		margin-bottom: 10px;
+		font-size: rem(14);
+		margin-bottom: 5px;
 		flex: 1 1 auto;
+
+		@media (min-width: $mobile) {
+			font-size: rem(16);
+			line-height: math.div(22, 16);
+			margin-bottom: 15px;
+		}
 	}
 
 	// .card__body-control
@@ -149,18 +161,39 @@
 	// .card__button
 	&__button {
 		margin-left: auto;
+
+		span {
+			display: none;
+
+			@media (min-width: $mobile) {
+				display: block;
+			}
+		}
+	}
+	&__button.button {
+		padding: 8px 12px;
+		@media (min-width: $mobile) {
+			padding: 10px 15px;
+		}
 	}
 	// .card__button-icon
 	&__button-icon {
 		fill: $red;
-		margin-right: 10px;
+		@media (min-width: $mobile) {
+			margin-right: 10px;
+		}
 	}
 
 	// .card-catalog__info
 	&__info {
 		display: flex;
+		flex-wrap: wrap;
+		row-gap: 5px;
 		justify-content: space-between;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
+		@media (min-width: $mobile) {
+			margin-bottom: 15px;
+		}
 	}
 	// .card-catalog__review
 	&__review {

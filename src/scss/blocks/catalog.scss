@@ -9,7 +9,7 @@
 	&__filter {
 		display: none;
 
-		@media (min-width: 1070px) {
+		@media (min-width: $tablet) {
 			flex: 0 1 278px;
 			display: block;
 			border: 1px solid #f2f3f5;
@@ -26,7 +26,9 @@
 	&__category-link {
 	}
 	&__content {
-		flex: 0 1 calc(100% - 298px);
+		@media (min-width: $tablet) {
+			flex: 0 1 calc(100% - 298px);
+		}
 	}
 	&__content-inner {
 	}
@@ -52,6 +54,9 @@
 		margin-bottom: 20px;
 	}
 	&__buttons-item {
+		&:last-child {
+			margin-left: auto;
+		}
 	}
 	&__buttons-btn {
 		font-size: rem(14);
