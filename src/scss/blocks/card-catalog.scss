@@ -221,12 +221,12 @@
 		background-color: #fff;
 		border-radius: 50%;
 		cursor: pointer;
-		background-image: url('../../img/icons/view.svg');
+		background-image: url('../img/icons/view.svg');
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 	&__view-button.active {
-		background-image: url('../../img/icons/view-check.svg');
+		background-image: url('../img/icons/view-check.svg');
 	}
 }
 

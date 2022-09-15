@@ -20,7 +20,7 @@
 								<h2 class="visually-hidden">Фильтр товаров</h2>
 								<ul class="catalog__category">
 									<li class="catalog__category-item">
-										<a class="catalog__category-link" href="#">Букеты из роз</a>
+										<a class="catalog__category-link active" href="#">Букеты из роз</a>
 									</li>
 									<li class="catalog__category-item">
 										<a class="catalog__category-link" href="#">Местные розы</a>
@@ -32,6 +32,26 @@
 										<a class="catalog__category-link" href="#">Кенийские розы</a>
 									</li>
 								</ul>
+								<form class="catalog-form">
+									<fieldset class="catalog-form__section">
+										<legend class="catalog-form__title">Цена</legend>
+										
+										<div class="catalog-form__inputs">
+                      <input type="number" min="500" max="50000" placeholder="0" class="catalog-form__input" id="input-0" />
+                      <input type="number" min="500" max="50000" placeholder="50000" class="catalog-form__input" id="input-1" />
+										</div>
+
+                    <div class="filters-price__slider" id="range-slider"></div>
+
+                     <div class="catalog-form__labels">
+                      <p class="catalog-form__price">от <span class="catalog-form__price-span catalog-form__price-from">500 </span></p>
+                      <p class="catalog-form__price">до <span class="catalog-form__price-span catalog-form__price-to">45 500 ₽</span></p>
+                    </div>
+									</fieldset>
+
+									<button class="" type="reset">Очистить фильтры</button>
+								</form>
+							
 							</section>
 							<section class="catalog__content">
 								<div class="catalog__content-inner">

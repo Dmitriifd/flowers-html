@@ -67,11 +67,12 @@ body {
   }
 }
 // Оболочка
-.wrapper {
+.wrapper{
   min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  
   // Прижимаем footer
   > main {
     flex: 1 1 auto;
@@ -164,25 +165,3 @@ body {
 
 // Подключение стилей отдельных страниц
 @import 'home';
-
-.test-label {
-	display: inline-block;
-}
-
-.test-span {
-	padding: 5px;
-	border: 1px solid silver;
-	border-radius: 10px;
-	cursor: pointer;
-}
-
-.test-input {
-	display: none;
-}
-
-.test-input:checked {
-	background-color: red;
-}
-.test-input:checked + .test-span {
-	background-color: red;
-}

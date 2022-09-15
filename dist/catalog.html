@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220910141424">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220915151224">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -350,7 +350,7 @@
 							<h2 class="visually-hidden">Фильтр товаров</h2>
 							<ul class="catalog__category">
 								<li class="catalog__category-item">
-									<a class="catalog__category-link" href="#">Букеты из роз</a>
+									<a class="catalog__category-link active" href="#">Букеты из роз</a>
 								</li>
 								<li class="catalog__category-item">
 									<a class="catalog__category-link" href="#">Местные розы</a>
@@ -362,6 +362,26 @@
 									<a class="catalog__category-link" href="#">Кенийские розы</a>
 								</li>
 							</ul>
+							<form class="catalog-form">
+								<fieldset class="catalog-form__section">
+									<legend class="catalog-form__title">Цена</legend>
+
+									<div class="catalog-form__inputs">
+										<input type="number" min="500" max="50000" placeholder="0" class="catalog-form__input" id="input-0" />
+										<input type="number" min="500" max="50000" placeholder="50000" class="catalog-form__input" id="input-1" />
+									</div>
+
+									<div class="filters-price__slider" id="range-slider"></div>
+
+									<div class="catalog-form__labels">
+										<p class="catalog-form__price">от <span class="catalog-form__price-span catalog-form__price-from">500 </span></p>
+										<p class="catalog-form__price">до <span class="catalog-form__price-span catalog-form__price-to">45 500 ₽</span></p>
+									</div>
+								</fieldset>
+
+								<button class="" type="reset">Очистить фильтры</button>
+							</form>
+
 						</section>
 						<section class="catalog__content">
 							<div class="catalog__content-inner">
@@ -507,24 +527,19 @@
 												<span class="size-chooser__size">Размер:</span>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="mini" />
 													<span class="size-chooser__span">MINI</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="standart" />
 													<span class="size-chooser__span">STANDART</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="maxi" />
 													<span class="size-chooser__span">MAXI</span>
 												</label>
-
-
 											</div>
 											<div class="card-catalog__body-control">
 												<p class="card-catalog__price">13 499 ₽<s>15 499 ₽</s></p>
@@ -597,24 +612,19 @@
 												<span class="size-chooser__size">Размер:</span>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="mini" />
 													<span class="size-chooser__span">MINI</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="standart" />
 													<span class="size-chooser__span">STANDART</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="maxi" />
 													<span class="size-chooser__span">MAXI</span>
 												</label>
-
-
 											</div>
 											<div class="card-catalog__body-control">
 												<p class="card-catalog__price">13 499 ₽<s>15 499 ₽</s></p>
@@ -687,24 +697,19 @@
 												<span class="size-chooser__size">Размер:</span>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="mini" />
 													<span class="size-chooser__span">MINI</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="standart" />
 													<span class="size-chooser__span">STANDART</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="maxi" />
 													<span class="size-chooser__span">MAXI</span>
 												</label>
-
-
 											</div>
 											<div class="card-catalog__body-control">
 												<p class="card-catalog__price">13 499 ₽<s>15 499 ₽</s></p>
@@ -777,24 +782,19 @@
 												<span class="size-chooser__size">Размер:</span>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="mini" />
 													<span class="size-chooser__span">MINI</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="standart" />
 													<span class="size-chooser__span">STANDART</span>
 												</label>
 
 												<label class="size-chooser__label">
-
 													<input class="size-chooser__item visually-hidden" type="radio" value="maxi" />
 													<span class="size-chooser__span">MAXI</span>
 												</label>
-
-
 											</div>
 											<div class="card-catalog__body-control">
 												<p class="card-catalog__price">13 499 ₽<s>15 499 ₽</s></p>
@@ -808,7 +808,6 @@
 										</div>
 									</article>
 								</li>
-
 							</ul>
 						</section>
 					</div>
@@ -1131,7 +1130,7 @@
 	</div>
 </div> -->
 
-	<script src="js/app.min.js?_v=20220910141424"></script>
+	<script src="js/app.min.js?_v=20220915151224"></script>
 </body>
 
 </html>

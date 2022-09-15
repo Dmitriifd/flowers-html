@@ -20,10 +20,57 @@
 	}
 	&__category {
 		// display: none;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #e2e4eb;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	&-form__section {
+		margin: 15px 0;
+	}
+	&-form__title {
+		margin-bottom: 10px;
+	}
+	&-form__labels {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-form__inputs {
+		display: flex;
+		column-gap: 10px;
+		justify-content: space-between;
+		margin-bottom: 25px;
+	}
+
+	&-form__input {
+		display: flex;
+		align-items: center;
+		width: 133px;
+		height: 38px;
+		border: 1px solid #d0d2d7;
+		border-radius: 5px;
+		padding: 0 10px;
+	}
+	&-form__price-span {
+		font-weight: 500;
 	}
 	&__category-item {
 	}
 	&__category-link {
+		display: inline-block;
+		margin-bottom: 10px;
+		transition: color 0.2s linear;
+
+		&:hover {
+			color: $green;
+		}
+	}
+	&__category-link.active {
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: math.div(26, 18);
 	}
 	&__content {
 		@media (min-width: $tablet) {
