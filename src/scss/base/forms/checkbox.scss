@@ -1,38 +1,63 @@
+/* настройки для всего элемента с чекбоксом */
 .checkbox {
-	position: relative;
-	&:not(:last-child) {
-		margin-bottom: em(5);
-	}
-	// .checkbox__input
-	&__input {
-		position: absolute;
-		width: 0;
-		height: 0;
-		opacity: 0;
-		&:focus + .checkbox__label:before {
-			box-shadow: 0 0 5px #000;
-		}
-		&:checked + .checkbox__label:before {
-			background: #000;
-		}
-	}
-	// .checkbox__label
-	&__label {
-		cursor: pointer;
-		display: inline-flex;
-		align-items: center;
-		position: relative;
-		gap: 10px;
-		&:before {
-			content: "";
-			align-self: flex-start;
-			flex: 0 0 20px;
-			width: 20px;
-			height: 20px;
-			border: 1px solid #a7a9ac;
-		}
-	}
-	// .checkbox__text
-	&__text {
-	}
+  /* меняем внешний вид курсора */
+  cursor: pointer;
+  /* выравниваем элементы по центру */
+  display: flex;
+  align-items: center;
 }
+
+/* отдельные настройки для самого чекбокса */
+.checkbox__input {
+  /* устанавливаем абсолютное позиционирование */
+  position: absolute;
+  /* задаём высоту и ширину */
+  width: 20px;
+  height: 20px;
+  /* делаем чекбокс непрозрачным, чтобы скрыть исходный элемент и заменить его потом нарисованным */
+  opacity: 0;
+  /* меняем внешний вид курсора */
+  cursor: pointer;
+  color: #006F94;
+}
+
+/* настройки для SVG-иконки */
+.checkbox__icon {
+  /* размеры совпадают с размерами скрытого чекбокса */
+  width: 20px;
+  height: 20px;
+  /* убираем ограничение по наименьшей ширине блока */
+  flex-shrink: 0;
+  /* разрешаем отображать содержимое за пределами блока */
+  overflow: visible;
+}
+
+/* общие настройки для нового чекбокса и галочки */
+.checkbox__icon .tick {
+  /* рисовать будем всё отрезками по 20 пикселей */
+  stroke-dasharray: 20px;
+  /* но сместим следующие отрезки тоже на 20 пикселей, чтобы получить сплошные линии */
+  stroke-dashoffset: 20px;
+  /* это даст нам плавную анимацию отрисовки галочки */
+  transition: stroke-dashoffset 0.2s ease-out;
+}
+
+/* настройки для подписи чекбокса */
+.checkbox__label {
+  /* добавляем отступ слева */
+  margin-left: 10px;
+}
+
+/* включаем возможность поставить галочку */
+.checkbox__input:checked + .checkbox__icon .tick {
+  /* убираем смещение для отрезков, чтобы включить анимацию галочки */
+  stroke-dashoffset: 0;
+}
+
+.check-group {
+  
+
+}
+
+
+

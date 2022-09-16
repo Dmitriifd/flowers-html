@@ -35,7 +35,7 @@
 		font-weight: 400;
 		font-size: rem(18);
 		line-height: math.div(26, 18);
-    font-weight: 500;
+		font-weight: 500;
 		margin-bottom: 10px;
 	}
 	&-form__labels {
@@ -97,6 +97,20 @@
 			background-color: #f2f6f7;
 		}
 	}
+	&-form__filter-name {
+    font-weight: 500;
+		margin-bottom: 10px;
+	}
+  &-form__checkboxes {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: repeat(2, max-content);
+    
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 	&__content-inner {
 	}
 	&__content-head {
