@@ -98,23 +98,69 @@
 		}
 	}
 	&-form__filter-name {
-    font-weight: 500;
+		font-weight: 500;
 		margin-bottom: 10px;
 	}
-  &-form__checkboxes {
-    display: grid;
-    gap: 10px 20px;
-    grid-template-columns: repeat(2, max-content);
-    
-    margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-	&__content-inner {
+	&-form__checkboxes {
+		display: grid;
+		gap: 10px 20px;
+		grid-template-columns: repeat(2, max-content);
+
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
-	&__content-head {
+
+	&-form__check-group {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
 	}
+	&-form__spollers-inner {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&-form__section-btn {
+		display: inline-block;
+		align-self: start;
+		font-size: rem(14);
+		line-height: math.div(20, 14);
+		font-weight: 500;
+		color: $green;
+	}
+	&-form__title.spollers__title {
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 20px;
+			height: 20px;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			background-position: center center;
+			background-image: url('../../img/icons/spoller.svg');
+			transform: translate(0) rotate(180deg);
+		}
+
+		&::before {
+			display: none;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			background-position: center center;
+			background-image: url('../../img/icons/spoller.svg');
+		}
+	}
+
+	&-form__title.spollers__title._spoller-active::after {
+		transform: rotate(0deg);
+	}
+
 	&__content-title {
 		font-family: 'Yeseva One';
 		font-size: rem(30);
