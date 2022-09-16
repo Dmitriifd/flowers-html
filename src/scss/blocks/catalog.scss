@@ -29,7 +29,13 @@
 		margin-right: -20px;
 	}
 	&-form__section {
+		border-bottom: 1px solid #e2e4eb;
 		margin: 15px 0;
+		padding-bottom: 15px;
+
+    &:last-of-type{
+      border: none;
+    }
 	}
 	&-form__title {
 		font-weight: 400;
@@ -121,6 +127,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+    overflow: hidden;
+    max-height: 190px;
+    margin-bottom: 10px;
 	}
 	&-form__section-btn {
 		display: inline-block;
@@ -153,7 +162,7 @@
 			background-repeat: no-repeat;
 			background-color: transparent;
 			background-position: center center;
-			background-image: url('../../img/icons/spoller.svg');
+			background-image: url('../img/icons/spoller.svg');
 		}
 	}
 
@@ -179,12 +188,23 @@
 		gap: 10px;
 		flex-wrap: wrap;
 		margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    max-height: 86px;
 	}
 	&__buttons-item {
 		&:last-child {
 			margin-left: auto;
 		}
 	}
+  &__buttons-item.hidden {
+    display: none;
+  }
+  &__buttons-item.show-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 	&__buttons-btn {
 		font-size: rem(14);
 		font-weight: 500;
@@ -206,7 +226,9 @@
 		padding: 8px 15px 8px 15px;
 		border: 1px solid #0093a2;
 		border-radius: 5px;
+    
 		svg {
+      transition: transform .2s linear;
 			margin-left: 10px;
 		}
 	}

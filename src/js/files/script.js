@@ -156,3 +156,47 @@ try {
 } catch (error) {
 	console.log(error)
 }
+
+/* Кнопка показать все в фильтрах */
+
+try {
+	const btn = document.querySelector('.catalog-form__section-btn')
+	const catalogForm = document.querySelector('.catalog-form__spollers-inner')
+	btn.addEventListener('click', () => {
+		if (catalogForm.classList.toggle('active')) {
+			btn.textContent = 'Свернуть'
+			catalogForm.style.maxHeight = '100%'
+		} else {
+			btn.textContent = 'Показать все'
+			catalogForm.style.maxHeight = '190px'
+		}
+	})
+} catch (error) {
+	console.log(error)
+}
+
+
+/* Кнопка показать еще */
+
+try {
+  const showMore = document.querySelector('.catalog__buttons-more')
+  const catalogButtonList = document.querySelector('.catalog__buttons-list')
+  const catalogButtonsHidden = document.querySelectorAll('.catalog__buttons-item.hidden')
+  
+  showMore.addEventListener('click', () => {
+    if (catalogButtonList.classList.toggle('active')) {
+			showMore.children[0].textContent = 'Свернуть'
+      showMore.children[1].style.transform = 'rotate(-180deg)'
+			catalogButtonList.style.maxHeight = '100%'
+      catalogButtonsHidden.forEach((item) => item.classList.remove('hidden'))
+		} else {
+      catalogButtonsHidden.forEach((item) => item.classList.add('hidden'))
+			showMore.children[0].textContent = 'Показать еще'
+      showMore.children[1].style.transform = 'rotate(0deg)'
+			catalogButtonList.style.maxHeight = '86px'
+		}
+  })
+
+} catch (error) {
+  console.log(error)
+}
