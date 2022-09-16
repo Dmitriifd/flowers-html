@@ -150,20 +150,10 @@
 			background-repeat: no-repeat;
 			background-color: transparent;
 			background-position: center center;
-			background-image: url('../../img/icons/spoller.svg');
+			background-image: url('../img/icons/spoller.svg');
 			transform: translate(0) rotate(180deg);
 		}
-
-		&::before {
-			display: none;
-			content: '';
-			width: 20px;
-			height: 20px;
-			background-repeat: no-repeat;
-			background-color: transparent;
-			background-position: center center;
-			background-image: url('../img/icons/spoller.svg');
-		}
+    
 	}
 
 	&-form__title.spollers__title._spoller-active::after {
