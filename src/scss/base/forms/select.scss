@@ -15,10 +15,13 @@
 		background-color: #fff;
 		cursor: pointer;
 		width: 100%;
-
+    
 		@media (max-width: 374px) {
 			min-width: 162px;
 		}
+    @media (min-width: $mobile) {
+      padding-right: 10px;
+    }
 	}
 	// .select__value
 	&__value {
@@ -75,17 +78,13 @@
 		top: 53px;
 		white-space: nowrap;
 		min-width: 100%;
-		left: 0;
+		right: 0;
 		background-color: #fff;
 		border: 1px solid #f2f3f5;
 		box-shadow: 0px 10px 30px rgba(34, 42, 70, 0.1);
 		border-radius: 5px;
 		padding: 10px 0px 5px 0px;
     z-index: 3;
-
-		@media (max-width: 375px) {
-			left: -12px;
-		}
 	}
 	// .select__scroll
 	&__scroll {
