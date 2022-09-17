@@ -1,5 +1,6 @@
 .catalog {
 	padding-bottom: 50px;
+	position: relative;
 	&__container {
 	}
 	&__wrapper {
@@ -7,7 +8,24 @@
 		column-gap: 20px;
 	}
 	&__filter {
-		display: none;
+		&.active {
+			transition: left 0.3s ease;
+			left: 15px;
+		}
+
+		@media (max-width: $tablet) {
+			position: absolute;
+			top: 0;
+			left: -100%;
+			border: 1px solid #f2f3f5;
+			box-shadow: 0px 0px 20px rgba(34, 42, 70, 0.05);
+			border-radius: 5px;
+			background-color: #fff;
+			padding: 20px;
+			width: 278px;
+			transition: left 0.3s ease;
+			z-index: 101;
+		}
 
 		@media (min-width: $tablet) {
 			flex: 0 1 278px;
@@ -17,6 +35,18 @@
 			border-radius: 5px;
 			padding: 20px;
 			height: 100%;
+		}
+	}
+	&__filter-close {
+    display: none;
+		@media (max-width: $tablet) {
+			position: absolute;
+      display: block;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+			width: 24px;
+			height: 24px;
 		}
 	}
 	&__category {
@@ -195,18 +225,18 @@
 		}
 	}
 	&__buttons-wrapper {
-    display: flex;
-      gap: 20px;
+		display: flex;
+		gap: 20px;
 
-    @media (max-width: 375px) {
-        display: none;
-    }
-    @media (max-width: $mobile) {
-        flex-direction: column;
-    }
-    @media (min-width: 375px) {
-      margin-bottom: 20px;
-    }
+		@media (max-width: 375px) {
+			display: none;
+		}
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+		@media (min-width: 375px) {
+			margin-bottom: 20px;
+		}
 	}
 	&__buttons-list {
 		display: inline-flex;
@@ -216,9 +246,9 @@
 		overflow: hidden;
 		max-height: 86px;
 
-    @media (max-width: $mobile) {
-        max-height: 185px;
-    }
+		@media (max-width: $mobile) {
+			max-height: 185px;
+		}
 	}
 	&__buttons-item {
 	}
@@ -246,7 +276,7 @@
 		}
 	}
 	&__buttons-more {
-    font-size: rem(14);
+		font-size: rem(14);
 		align-self: flex-end;
 		flex-shrink: 0;
 		font-weight: 500;
@@ -260,9 +290,9 @@
 			margin-left: 10px;
 		}
 
-   @media (max-width: $mobile) {
-        align-self: flex-start;
-    }
+		@media (max-width: $mobile) {
+			align-self: flex-start;
+		}
 	}
 	&__filter-inner {
 		display: flex;

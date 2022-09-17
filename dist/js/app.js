@@ -6085,6 +6085,22 @@
         } catch (error) {
             console.log(error);
         }
+        try {
+            const overlay = document.querySelector(".overlay");
+            const catalogFilter = document.querySelector(".catalog__filter");
+            const filterButtonClose = document.querySelector(".catalog__filter-close");
+            const filterMenuHandler = e => {
+                if (e.target === overlay || e.target === filterButtonClose) {
+                    catalogFilter.classList.remove("active");
+                    overlay.classList.remove("active");
+                }
+                if (e.target.closest(".catalog__filter-button")) {
+                    overlay.classList.add("active");
+                    catalogFilter.classList.toggle("active");
+                }
+            };
+            document.addEventListener("click", filterMenuHandler);
+        } catch (error) {}
         window["FLS"] = false;
         isWebp();
         menuInit();

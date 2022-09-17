@@ -2,6 +2,7 @@
 <html lang="ru">
 	@@include('html/_head.htm',{ "title":"Каталог" })
 	<body>
+    <div class="overlay"></div>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
@@ -17,6 +18,7 @@
 						</ul>
 						<div class="catalog__wrapper">
 							<section class="catalog__filter filter">
+                <img class="catalog__filter-close" src="img/icons/close.svg" alt="close filter">
 								<h2 class="visually-hidden">Фильтр товаров</h2>
 								<ul class="catalog__category">
 									<li class="catalog__category-item">
